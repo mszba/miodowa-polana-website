@@ -11,7 +11,7 @@ import {
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <NavbarContainer>
@@ -23,7 +23,7 @@ const Navbar = () => {
               height: '50px',
             }}></div>
         </NavLogo>
-        <MobileIconBars>
+        <MobileIconBars onClick={toggle}>
           <FaBars />
         </MobileIconBars>
         <NavMenu>
