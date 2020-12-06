@@ -1,4 +1,3 @@
-// import { useState, useEffect } from 'react';
 import {
   CircleLayer,
   AsideContainer,
@@ -13,30 +12,10 @@ import {
 } from './AsideElements';
 
 const Aside = ({ isOpen, toggle }) => {
-  // // console.log(window.screen.width);
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  // const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-
-  // const handleResize = () => {
-  //   // setWindowWidth(window.innerWidth);
-  //   setWindowHeight(window.innerHeight);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('resize', handleResize);
-  // }, []);
   return (
     <>
       <CircleLayer isOpen={isOpen} />
-      <AsideContainer
-        // style={{
-        //   width: windowWidth,
-        //   height: windowWidth,
-        //   top: windowWidth / 2,
-        //   right: windowWidth / 2,
-        // }}
-        isOpen={isOpen}
-        onClick={toggle}>
+      <AsideContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>

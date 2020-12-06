@@ -3,18 +3,6 @@ import { Link as LinkScroll } from 'react-scroll';
 
 import { FaTimes } from 'react-icons/fa';
 
-// const scaleUp = keyframes`
-//   from {
-//     width: 0;
-//   height: 0;
-//   }
-
-//   to {
-//     width: 100%;
-//   height: 100%;
-//   }
-// `;
-
 export const CircleLayer = styled.div`
   border-radius: 50%;
   width: 0;
@@ -25,12 +13,15 @@ export const CircleLayer = styled.div`
   background: #ffca00;
   opacity: 1;
   z-index: 998;
-  transition: all 0.4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  visibility: hidden;
+  transition: top 0.6s, right 0.6s, width 0.6s, height 0.6s,
+    visibility 0.6s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 
-  width: ${({ isOpen }) => (isOpen ? '2000px' : '0')};
-  height: ${({ isOpen }) => (isOpen ? '2000px' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '-560px' : '35px')};
-  right: ${({ isOpen }) => (isOpen ? '-565px;' : '42px')};
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+  top: ${({ isOpen }) => (isOpen ? '-400px' : '35px')};
+  right: ${({ isOpen }) => (isOpen ? '-400px' : '42px')};
+  width: ${({ isOpen }) => (isOpen ? '1500px' : '0px')};
+  height: ${({ isOpen }) => (isOpen ? '1500px' : '0px')};
 `;
 
 export const AsideContainer = styled.aside`
@@ -44,7 +35,8 @@ export const AsideContainer = styled.aside`
   align-items: center;
   z-index: 999;
   background: transparent;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transition-delay: ${({ isOpen }) => (isOpen ? '.2s' : '0s')};
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
 `;
