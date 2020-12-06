@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <HeroPictureBg src={Background} />
+        <HeroPictureBg src={Background} alt='Widok na góry' />
       </HeroBg>
       <HeroContent>
         <HeroH1>Przygoda boza w bieszczadach</HeroH1>

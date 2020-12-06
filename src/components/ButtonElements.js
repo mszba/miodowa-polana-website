@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonAnchor = styled.a`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? '#ffca00' : '#fff')};
+  background: ${({ primary }) => (primary ? '#ffca00' : '#240D00')};
   white-space: space nowrap;
   padding: ${({ big }) => (big ? '10px 27px' : '8px 15px')};
   color: ${({ dark }) => (dark ? '#240D00' : '#fff')};
