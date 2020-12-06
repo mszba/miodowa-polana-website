@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
 
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaPhoneAlt } from 'react-icons/fa';
 
 export const CircleLayer = styled.div`
   border-radius: 50%;
@@ -92,8 +92,14 @@ export const AsideLink = styled(LinkScroll)`
 `;
 
 export const AsidePhoneWrap = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 40px);
+  text-align: center;
+`;
+
+export const PhoneIcon = styled(FaPhoneAlt)`
+  color: #fff;
 `;
 
 export const AsidePhoneLink = styled.a`

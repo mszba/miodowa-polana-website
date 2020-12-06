@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 export const Nav = styled.nav`
   position: sticky;
   top: 0;
   height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   z-index: 10;
-  background: #240d00;
-  /* background: ${({ scrollNav }) =>
-    scrollNav ? '#240D00' : 'transparent'}; */
+  background: ${({ scrollNav }) => (scrollNav ? '#240D00' : 'transparent')};
+  transition: 0.8s all ease;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -82,6 +83,10 @@ export const NavLink = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #ffca00;
   }
+`;
+
+export const PhoneIcon = styled(FaPhoneAlt)`
+  color: #fff;
 `;
 
 export const NavPhoneWrap = styled.div`

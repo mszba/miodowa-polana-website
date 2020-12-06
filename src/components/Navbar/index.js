@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import {
   Nav,
   NavbarContainer,
@@ -7,13 +9,28 @@ import {
   NavItem,
   NavLink,
   NavPhoneWrap,
+  PhoneIcon,
   NavPhoneLink,
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
   return (
-    <Nav>
+    <Nav scrollNav={scrollNav}>
       <NavbarContainer>
         <NavLogo to='/'>
           <div
@@ -44,7 +61,10 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavPhoneWrap>
-          <NavPhoneLink href='tel:555428940'>555 428 940</NavPhoneLink>
+          <NavPhoneLink href='tel:555428940'>
+            <PhoneIcon />
+            &nbsp; 555 428 940
+          </NavPhoneLink>
         </NavPhoneWrap>
       </NavbarContainer>
     </Nav>

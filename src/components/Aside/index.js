@@ -8,6 +8,7 @@ import {
   AsideMenuItem,
   AsideLink,
   AsidePhoneWrap,
+  PhoneIcon,
   AsidePhoneLink,
 } from './AsideElements';
 
@@ -49,7 +50,14 @@ const Aside = ({ isOpen, toggle }) => {
           </AsideMenu>
 
           <AsidePhoneWrap>
-            <AsidePhoneLink href='tel:555428940'>555 428 940</AsidePhoneLink>
+            <AsidePhoneLink href='tel:604 208 541'>
+              <PhoneIcon />
+              &nbsp; 604 208 541
+            </AsidePhoneLink>
+            <AsidePhoneLink href='tel:608 483 596'>
+              <PhoneIcon />
+              &nbsp; 608 483 596
+            </AsidePhoneLink>
           </AsidePhoneWrap>
         </AsideWrapper>
       </AsideContainer>
