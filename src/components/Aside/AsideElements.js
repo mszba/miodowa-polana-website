@@ -4,16 +4,16 @@ import { Link as LinkScroll } from 'react-scroll';
 import { FaTimes, FaPhoneAlt } from 'react-icons/fa';
 
 export const CircleLayer = styled.div`
-  border-radius: 50%;
   width: 0;
   height: 0;
   position: fixed;
   top: 35px;
   right: 42px;
+  border-radius: 50%;
+  visibility: hidden;
   background: #ffca00;
   opacity: 1;
   z-index: 998;
-  visibility: hidden;
   transition: top 0.6s, right 0.6s, width 0.6s, height 0.6s,
     visibility 0.6s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 

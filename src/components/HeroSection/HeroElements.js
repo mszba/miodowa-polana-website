@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
+  position: relative;
+  height: 800px;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
   z-index: 1;
 
   :before {
@@ -22,13 +22,13 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBg = styled.div`
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 `;
 
@@ -41,6 +41,7 @@ export const HeroPictureBg = styled.img`
 
 export const HeroContent = styled.div`
   position: absolute;
+  max-width: 2200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,13 +51,13 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   width: 50%;
-  font-weight: 700;
   margin-left: 4vw;
   padding-right: 30px;
-  color: #fff;
-  font-size: 70px;
+  font-weight: 700;
   text-align: left;
+  font-size: 70px;
   text-transform: uppercase;
+  color: #fff;
 
   @media screen and (max-width: 768px) {
     font-size: 44px;
@@ -68,12 +69,12 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroTextWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   margin-left: 63vw;
   margin-top: 5vh;
   margin-bottom: -150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   @media screen and (max-width: 768px) {
     margin-left: 50vw;
@@ -85,12 +86,12 @@ export const HeroTextWrap = styled.div`
 `;
 
 export const HeroP = styled.p`
+  max-width: 600px;
   margin-top: 24px;
-  font-size: 24px;
-  text-align: left;
   margin-bottom: 3vw;
   margin-right: 5vw;
-  max-width: 600px;
+  text-align: left;
+  font-size: 24px;
   color: #fff;
 
   @media screen and (max-width: 768px) {

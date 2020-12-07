@@ -10,15 +10,15 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  display: grid;
-  z-index: 1;
   height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+  display: grid;
   justify-content: center;
+  z-index: 1;
 `;
 
 export const InfoRow = styled.div`
@@ -53,19 +53,20 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #ffca00;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  color: #ffca00;
 `;
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
   line-height: 1.1;
+  font-size: 48px;
   font-weight: 600;
+  text-transform: uppercase;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#240D00')};
 
   @media screen and (max-width: 480px) {
@@ -86,14 +87,14 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 export const DivWrap = styled.div`
-  max-width: 555px;
   height: 100%;
+  max-width: 555px;
 `;
 
 export const Img = styled.div`
   width: 100px;
   height: 100px;
-  background: red;
   margin: 0 0 10px 0;
   padding-right: 0;
+  background: red;
 `;

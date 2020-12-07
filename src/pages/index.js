@@ -5,6 +5,7 @@ import Aside from '../components/Aside';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import InfoSection2 from '../components/InfoSection2';
+import GallerySection from '../components/GallerySection';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection />
       <InfoSection2 />
+      <GallerySection />
     </>
   );
 };
