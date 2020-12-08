@@ -1,0 +1,32 @@
+/* square buttons */
+.rec.rec-arrow {
+  background: #240D00;
+  border: none;
+  color:#F9F9F9;
+  box-shadow: none;
+}
+
+.rec.rec-arrow.rec-arrow-left:focus {
+  background-color:#ffca00;
+  color:#F9F9F9;
+  box-shadow: none;
+}
+.rec.rec-arrow.rec-arrow-right:focus {
+  background-color:#ffca00;
+  color:#F9F9F9;
+  box-shadow: none;
+}
+
+.rec.rec-arrow.rec-arrow-left:hover {
+  background:#ffca00;
+  box-shadow: none;
+}
+.rec.rec-arrow.rec-arrow-right:hover {
+  background:#ffca00;
+  box-shadow: none;
+}
+
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  background: #ffca00;
+}

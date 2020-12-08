@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  z-index: 10;
+  z-index: 21;
   background: ${({ scrollNav }) => (scrollNav ? '#240D00' : 'transparent')};
   transition: 0.8s all ease;
 
