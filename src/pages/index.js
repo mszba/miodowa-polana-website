@@ -8,6 +8,7 @@ import InfoSection2 from '../components/InfoSection2';
 import GallerySection from '../components/GallerySection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home = () => {
       <GallerySection />
       <TestimonialsSection />
       <ContactSection />
+      <Footer />
     </>
   );
 };
