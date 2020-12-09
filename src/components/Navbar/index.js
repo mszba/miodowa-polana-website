@@ -61,9 +61,9 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavPhoneWrap>
-          <NavPhoneLink href='tel:555428940'>
+          <NavPhoneLink href='tel:604 208 541'>
             <PhoneIcon />
-            &nbsp; 555 428 940
+            &nbsp; 604 208 541
           </NavPhoneLink>
         </NavPhoneWrap>
       </NavbarContainer>
