@@ -18,7 +18,7 @@ import {
 const InfoSection = () => {
   return (
     <>
-      <InfoContainer lightBg={false}>
+      <InfoContainer id='attractions' lightBg={false}>
         <InfoWrapper>
           <InfoRow imgStart={true}>
             <Column1>

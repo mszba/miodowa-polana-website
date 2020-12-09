@@ -15,7 +15,7 @@ import Background from '../../images/picture-1.jpg';
 
 const HeroSection = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroBg>
         <HeroPictureBg src={Background} alt='Widok na góry' />
       </HeroBg>

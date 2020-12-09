@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
 
   return (
     <>
-      <TestimonialsContainer>
+      <TestimonialsContainer id='testimonials'>
         <TestimonialsWrapper>
           <TextWrapper>
             <TopLine>Opinie</TopLine>

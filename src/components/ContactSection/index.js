@@ -20,7 +20,7 @@ import { PhoneIcon } from '../Aside/AsideElements';
 const ContactSection = () => {
   return (
     <>
-      <ContactContainer>
+      <ContactContainer id='contact'>
         <ContactWrapper>
           <MapWrap>
             <MapContainer

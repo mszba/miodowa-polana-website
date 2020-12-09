@@ -22,7 +22,7 @@ import { ButtonAnchor } from '../ButtonElements';
 const GallerySection = () => {
   return (
     <>
-      <GalleryContainer>
+      <GalleryContainer id='gallery'>
         <ButtonWrapper>
           <ButtonAnchor primary={1} dark={1} big={1}>
             Zobacz więcej

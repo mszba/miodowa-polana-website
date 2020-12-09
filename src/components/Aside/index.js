@@ -23,27 +23,59 @@ const Aside = ({ isOpen, toggle }) => {
         <AsideWrapper>
           <AsideMenu>
             <AsideMenuItem>
-              <AsideLink to='attractions' onClick={toggle}>
+              <AsideLink
+                to='attractions'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                onClick={toggle}>
                 Atrakcje
               </AsideLink>
             </AsideMenuItem>
             <AsideMenuItem>
-              <AsideLink to='offer' onClick={toggle}>
+              <AsideLink
+                to='offer'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                onClick={toggle}>
                 Oferta
               </AsideLink>
             </AsideMenuItem>
             <AsideMenuItem>
-              <AsideLink to='gallery' onClick={toggle}>
+              <AsideLink
+                to='gallery'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                onClick={toggle}>
                 Galeria
               </AsideLink>
             </AsideMenuItem>
             <AsideMenuItem>
-              <AsideLink to='opinions' onClick={toggle}>
+              <AsideLink
+                to='testimonials'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                onClick={toggle}>
                 Opinie
               </AsideLink>
             </AsideMenuItem>
             <AsideMenuItem>
-              <AsideLink to='contact' onClick={toggle}>
+              <AsideLink
+                to='contact'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                onClick={toggle}>
                 Kontakt
               </AsideLink>
             </AsideMenuItem>

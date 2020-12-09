@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 import {
   Nav,
@@ -29,10 +30,14 @@ const Navbar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavLogo to='/'>
+        <NavLogo to='/' onClick={toggleHome}>
           <div
             style={{
               background: 'red',
@@ -45,19 +50,56 @@ const Navbar = ({ toggle }) => {
         </MobileIconBars>
         <NavMenu>
           <NavItem>
-            <NavLink to='attractions'>Atrakcje</NavLink>
+            <NavLink
+              to='attractions'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}>
+              Atrakcje
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='offer'>Oferta</NavLink>
+            <NavLink
+              to='offer'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}>
+              Oferta
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='gallery'>Galeria</NavLink>
+            <NavLink
+              to='gallery'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'>
+              Galeria
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='testimonials'>Opinie</NavLink>
+            <NavLink
+              to='testimonials'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'>
+              Opinie
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='contact'>Kontakt</NavLink>
+            <NavLink
+              to='contact'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'>
+              Kontakt
+            </NavLink>
           </NavItem>
         </NavMenu>
         <NavPhoneWrap>
