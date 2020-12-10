@@ -22,28 +22,40 @@ export const InfoWrapper = styled.div`
 `;
 
 export const InfoRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  display: flex;
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1' 'col1' 'col2 col2'`};
-  }
+  flex-direction: row-reverse;
 `;
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HexagonContainer = styled.div`
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -15%);
+
+  @media screen and (max-width: 850px) {
+    width: 300px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -86,15 +98,15 @@ export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
 `;
-export const DivWrap = styled.div`
+export const HexagonWrap = styled.div`
   height: 100%;
   max-width: 555px;
 `;
 
-export const Img = styled.div`
-  width: 100px;
-  height: 100px;
-  margin: 0 0 10px 0;
-  padding-right: 0;
-  background: red;
+export const Hexagon = styled.div`
+  transform-origin: center;
+  transition: transform 0.4s;
+  &:hover {
+    transform: rotate(-61deg);
+  }
 `;

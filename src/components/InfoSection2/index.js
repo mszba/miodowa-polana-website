@@ -3,7 +3,6 @@ import { ButtonAnchor } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
-  InfoRow,
   Column1,
   Column2,
   TextWrapper,
@@ -11,16 +10,22 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  DivWrap,
-  Img,
+  HexagonWrap,
+  Hexagon,
 } from '../InfoSection/InfoSectionElements';
+
+import { InfoRow } from './InfoSection2Elements';
+
+import { HexagonContainer } from '../InfoSection/InfoSectionElements';
+
+import '../InfoSection/Hexagon.css';
 
 const InfoSection2 = () => {
   return (
     <>
       <InfoContainer id='offer' lightBg={true}>
         <InfoWrapper>
-          <InfoRow imgStart={false}>
+          <InfoRow className='flex-container'>
             <Column1>
               <TextWrapper>
                 <TopLine>Oferta</TopLine>
@@ -39,12 +44,28 @@ const InfoSection2 = () => {
               </TextWrapper>
             </Column1>
             <Column2>
-              <DivWrap>
-                <Img />
-                <Img />
-                <Img />
-                <Img />
-              </DivWrap>
+              <HexagonContainer>
+                <HexagonWrap className='hexagon-wrapper'>
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#240D00' }}
+                  />
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#FFCA00' }}
+                  />
+                </HexagonWrap>
+                <HexagonWrap className='hexagon-wrapper wrapper2'>
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#FFCA00' }}
+                  />
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#240D00' }}
+                  />
+                </HexagonWrap>
+              </HexagonContainer>
             </Column2>
           </InfoRow>
         </InfoWrapper>

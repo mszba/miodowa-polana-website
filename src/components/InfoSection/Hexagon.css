@@ -1,0 +1,147 @@
+*, *:after, *:before {box-sizing: inherit;}
+* {margin:0;padding:0;border: 0 none; position: relative;}
+
+
+.hexagon-wrapper {
+  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.wrapper2 {
+  margin-left:-25px;
+  transform: translateY(25%);
+}
+
+.hexagon-element-wrap {
+  width: 220px; 
+  height: calc(220px / 1.1111111);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-bottom:25px;
+	transition: .4s;
+	cursor: pointer;
+	max-width: 2000px;
+	max-height: 2000px;
+}
+
+@media screen and (max-width:1200px){
+  .hexagon-element-wrap {
+    width: 200px; 
+    height: calc(200px / 1.1111111);
+    margin-bottom:30px;
+  }
+
+  .wrapper2 {
+    margin-left:-50px;
+    transform: translateY(24%);
+  }
+}
+@media screen and (max-width:850px){
+  .hexagon-element-wrap {
+    width: 160px; 
+    height: calc(160px / 1.1111111);
+    margin-bottom:35px;
+  }
+
+  .wrapper2 {
+    margin-left:-20px;
+    transform: translateY(20%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+	--size: 250px;
+}
+
+
+.hexagon-wrapper {
+  width: 100%;
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-gap: 30px;
+  transform:translateX(-50%)
+}
+.hexagon-element-wrap {
+  width: 250px; 
+  height: calc(250px / 1.1111111);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-right: calc(250px / 2);
+	overflow: hidden;
+	transition: .4s;
+	cursor: pointer;
+	max-width: 2000px;
+	max-height: 2000px;
+}
+.hexagon-element-wrap:nth-child(2n) {margin: calc(250px * -.5) calc(250px * -.25) 0 calc(250px * -.75);}
+.hexagon-element-wrap::before {
+	content: '';
+	float: left;
+	width: 25%;
+	height: 100%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+@media screen and (max-width:1200px){
+  .hexagon-element-wrap {
+    width: 210px; 
+    height: calc(210px / 1.1111111);
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    margin-right: calc(210px / 2);
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+    max-width: 2000px;
+    max-height: 2000px;
+  }
+
+  .hexagon-element-wrap:nth-child(2n) {margin: calc(210px * -.55) calc(210px * -.25) 0 calc(210px * -.75);}
+
+} */

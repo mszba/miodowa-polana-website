@@ -11,16 +11,19 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  DivWrap,
-  Img,
+  HexagonWrap,
+  Hexagon,
+  HexagonContainer,
 } from './InfoSectionElements';
+
+import './Hexagon.css';
 
 const InfoSection = () => {
   return (
     <>
       <InfoContainer id='attractions' lightBg={false}>
         <InfoWrapper>
-          <InfoRow imgStart={true}>
+          <InfoRow>
             <Column1>
               <TextWrapper>
                 <TopLine>Atrakcje</TopLine>
@@ -41,11 +44,30 @@ const InfoSection = () => {
               </TextWrapper>
             </Column1>
             <Column2>
-              <DivWrap>
-                <Img />
-                <Img />
-                <Img />
-              </DivWrap>
+              <HexagonContainer>
+                <HexagonWrap className='hexagon-wrapper'>
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#FFCA00' }}
+                  />
+
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#F7F8FA' }}
+                  />
+                </HexagonWrap>
+                <HexagonWrap className='hexagon-wrapper wrapper2'>
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#F7F8FA' }}
+                  />
+
+                  <Hexagon
+                    className='hexagon-element-wrap'
+                    style={{ background: '#FFCA00' }}
+                  />
+                </HexagonWrap>
+              </HexagonContainer>
             </Column2>
           </InfoRow>
         </InfoWrapper>
