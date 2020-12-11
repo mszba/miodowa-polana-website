@@ -1,4 +1,4 @@
-import { ButtonAnchor } from '../ButtonElements';
+import { ButtonRouter } from '../ButtonElements';
 
 import {
   InfoContainer,
@@ -37,9 +37,9 @@ const InfoSection2 = () => {
                   aspernatur ipsam natus voluptates necessitatibus?
                 </Subtitle>
                 <BtnWrap>
-                  <ButtonAnchor primary={0} dark={0} big={1}>
+                  <ButtonRouter to='/offer' primary={0} dark={0} big={1}>
                     Zobacz więcej
-                  </ButtonAnchor>
+                  </ButtonRouter>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

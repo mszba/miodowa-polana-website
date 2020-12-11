@@ -17,16 +17,16 @@ import picture2 from '../../images/picture-22.jpg';
 import picture3 from '../../images/picture-23.jpg';
 import picture4 from '../../images/picture-24.jpg';
 
-import { ButtonAnchor } from '../ButtonElements';
+import { ButtonRouter } from '../ButtonElements';
 
 const GallerySection = () => {
   return (
     <>
       <GalleryContainer id='gallery'>
         <ButtonWrapper>
-          <ButtonAnchor primary={1} dark={1} big={1}>
+          <ButtonRouter to='/gallery' primary={1} dark={1} big={1}>
             Zobacz więcej
-          </ButtonAnchor>
+          </ButtonRouter>
         </ButtonWrapper>
 
         <GalleryWrapper>
