@@ -118,7 +118,6 @@ export const QuoteAuthor = styled.p`
 export const QuotePictureWrap = styled.div`
   width: 80px;
   height: 70px;
-  background: red;
   overflow: hidden;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 `;
