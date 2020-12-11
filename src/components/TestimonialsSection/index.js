@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import Carousel from 'react-elastic-carousel';
 
 import {
@@ -22,6 +24,10 @@ import { testimonials } from './Data';
 import './Carousel.css';
 
 const TestimonialsSection = () => {
+  const carouselRef = useRef(null);
+  const totalPages = Math.ceil(testimonials.length);
+  let resetTimeout;
+
   return (
     <>
       <TestimonialsContainer id='testimonials'>
@@ -32,11 +38,20 @@ const TestimonialsSection = () => {
           </TextWrapper>
           <TestimonialsElementsWrapper>
             <Carousel
+              ref={carouselRef}
               transitionMs={800}
               pagination={false}
               enableAutoPlay={true}
-              autoPlaySpeed={7000}
-              itemsToShow={1}>
+              autoPlaySpeed={6000}
+              itemsToShow={1}
+              onNextEnd={({ index }) => {
+                clearTimeout(resetTimeout);
+                if (index + 1 === totalPages) {
+                  resetTimeout = setTimeout(() => {
+                    carouselRef.current.goTo(0);
+                  }, 6000); // same time
+                }
+              }}>
               {testimonials.map((item) => (
                 <TestimonialWrap key={item.id}>
                   <QuoteIconWrap>

@@ -5,7 +5,7 @@ export const testimonials = [
   {
     id: 1,
     text:
-      'Fantastyczny dom w cudownej okolicy! Cisza, spokój, zieleń! Zapach lasu i spiew ptaków, zwierzęta leśne zagladające na polankę :) 1,5ha przestrzeni, z dala od komercji i głośnych ośrodków! Warunki zakwaterowania bardzo dobre, czysto, ciepło, pokoje z balkonami z pięknym widokiem, zadbane łazienki oraz kuchnia. Przemili właściciele, uczynni, pomocni! Spędziliśmy tam 5 dni na majówce i chętnie wrócimy, o każdej porze roku!',
+      'Fantastyczny dom w cudownej okolicy! Cisza, spokój, zieleń! Zapach lasu i spiew ptaków, zwierzęta leśne zagladające na polankę. 1,5ha przestrzeni, z dala od komercji i głośnych ośrodków! Warunki zakwaterowania bardzo dobre, czysto, ciepło, pokoje z balkonami z pięknym widokiem, zadbane łazienki oraz kuchnia. Przemili właściciele, uczynni, pomocni! Spędziliśmy tam 5 dni na majówce i chętnie wrócimy, o każdej porze roku!',
     author: 'Anna',
     image: femaleAvatar,
   },
