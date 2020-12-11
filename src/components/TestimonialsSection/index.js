@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 import Carousel from 'react-elastic-carousel';
 
@@ -28,6 +28,16 @@ const TestimonialsSection = () => {
   const totalPages = Math.ceil(testimonials.length);
   let resetTimeout;
 
+  useEffect(() => {
+    return () => {
+      let id = window.setTimeout(function () {}, 0);
+
+      while (id--) {
+        window.clearTimeout(id);
+      }
+    };
+  }, []);
+
   return (
     <>
       <TestimonialsContainer id='testimonials'>
@@ -49,7 +59,7 @@ const TestimonialsSection = () => {
                 if (index + 1 === totalPages) {
                   resetTimeout = setTimeout(() => {
                     carouselRef.current.goTo(0);
-                  }, 6000); // same time
+                  }, 6000);
                 }
               }}>
               {testimonials.map((item) => (
