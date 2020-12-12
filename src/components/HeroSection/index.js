@@ -20,7 +20,7 @@ const HeroSection = () => {
         <HeroPictureBg src={Background} alt='Widok na góry' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Przygoda boza w bieszczadach</HeroH1>
+        <HeroH1>Odpocznij w Bieszczadach</HeroH1>
         <HeroTextWrap>
           <HeroP>
             Bieszczaduj cale te na wspaniałej miodowej polanie już dzisiaj tu

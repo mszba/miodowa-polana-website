@@ -30,3 +30,7 @@
 .rec.rec-arrow:hover {
   background: #ffca00;
 }
+
+.rec-slider-container {
+  margin:0 9px !important;
+}

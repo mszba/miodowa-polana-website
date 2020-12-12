@@ -1,4 +1,25 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const titleAnimation = keyframes`
+  from {
+    margin-left: -50vw;
+    opacity:0.3;
+  }
+
+  to {
+    margin-left: 4vw;
+    opacity:1;
+  }
+`;
+const textAnimation = keyframes`
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;
+  }
+`;
 
 export const HeroContainer = styled.div`
   position: relative;
@@ -58,6 +79,7 @@ export const HeroH1 = styled.h1`
   font-size: 70px;
   text-transform: uppercase;
   color: #fff;
+  animation: ${titleAnimation} 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
 
   @media screen and (max-width: 768px) {
     font-size: 44px;
@@ -75,6 +97,8 @@ export const HeroTextWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
+  animation: ${textAnimation} 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 
   @media screen and (max-width: 768px) {
     margin-left: 50vw;
