@@ -14,6 +14,8 @@ import {
   HexagonWrap,
   Hexagon,
   HexagonContainer,
+  AttractionsList,
+  AttractionsElement,
 } from './InfoSectionElements';
 
 import './Hexagon.css';
@@ -28,14 +30,26 @@ const InfoSection = () => {
               <TextWrapper>
                 <TopLine>Atrakcje</TopLine>
                 <Heading lightText={true}>
-                  Na miodowej odpoczniesz tu tego
+                  Przeżyjesz tutaj niesamowitą przygodę
                 </Heading>
                 <Subtitle darkText={false}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
-                  explicabo eius ducimus reprehenderit molestias sapiente porro
-                  enim earum voluptate quia magnam quas, totam dolorum illum
-                  voluptatibus unde corporis asperiores ea!
+                  W naszej okolicy znajduje się wiele ciekakawych atrakcji dla
+                  chcących odpocząć, dzieci jak i również aktywnych fizycznie.
+                  Każdy znajdzie coś dla siebie:
                 </Subtitle>
+                <AttractionsList>
+                  <AttractionsElement>
+                    piesze i rowerowe szlaki turystyczne
+                  </AttractionsElement>
+                  <AttractionsElement>kąpieliska i baseny</AttractionsElement>
+                  <AttractionsElement>
+                    wypożyczalnie sprzętu wodnego
+                  </AttractionsElement>
+                  <AttractionsElement>stadniny koni</AttractionsElement>
+                  <AttractionsElement>
+                    stoki narciarskie oraz wiele innych
+                  </AttractionsElement>
+                </AttractionsList>
                 <BtnWrap>
                   <ButtonRouter to='/attractions' primary={1} dark={1} big={1}>
                     Zobacz więcej

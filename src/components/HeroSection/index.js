@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   HeroContainer,
   HeroBg,
@@ -20,14 +22,37 @@ const HeroSection = () => {
         <HeroPictureBg src={Background} alt='Widok na góry' />
       </HeroBg>
       <HeroContent>
+        {/* <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={{
+            hidden: {
+              opacity: 0,
+              marginLeft: '-50vw',
+            },
+            visible: {
+              opacity: 1,
+              marginLeft: '4vw',
+              transition: {
+                duration: 0.5,
+                delay: 0.4,
+              },
+            },
+          }}> */}
         <HeroH1>Odpocznij w Bieszczadach</HeroH1>
+        {/* </motion.div> */}
         <HeroTextWrap>
           <HeroP>
-            Bieszczaduj cale te na wspaniałej miodowej polanie już dzisiaj tu
-            tego, będzie dobrze cale te jak to się mówi
+            Miodowa Polana to miejsce , w którym doświadczych bliskiego kontaktu
+            z naturą. Obiekt znajduje się w strefie uzdrowiskowej oraz spokojnej
+            i cichej okolicy.
           </HeroP>
           <HeroBtnWrap>
-            <ButtonAnchor primary={1} dark={1} big='true'>
+            <ButtonAnchor
+              href='https://www.booking.com/hotel/pl/miodowa-polana.pl.html'
+              primary={1}
+              dark={1}
+              big='true'>
               Zarezerwuj teraz
             </ButtonAnchor>
           </HeroBtnWrap>

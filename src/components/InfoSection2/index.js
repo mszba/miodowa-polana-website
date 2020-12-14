@@ -14,7 +14,7 @@ import {
   Hexagon,
 } from '../InfoSection/InfoSectionElements';
 
-import { InfoRow } from './InfoSection2Elements';
+import { InfoRow, OfferList, OfferElement } from './InfoSection2Elements';
 
 import { HexagonContainer } from '../InfoSection/InfoSectionElements';
 
@@ -31,11 +31,22 @@ const InfoSection2 = () => {
                 <TopLine>Oferta</TopLine>
                 <Heading lightText={false}>Oferta miodowej polany</Heading>
                 <Subtitle darkText={true}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  corrupti iusto adipisci error temporibus odit iure maiores,
-                  quidem illo repellat praesentium ratione quasi a veritatis
-                  aspernatur ipsam natus voluptates necessitatibus?
+                  Na terenie naszego obiektu znajduje się wiele udogodnień,
+                  które umilą pańswu pobyt w naszym pensjonacie:
                 </Subtitle>
+                <OfferList>
+                  <OfferElement>pokoje z łazienkami</OfferElement>
+                  <OfferElement>ogólnodostępna kuchnia</OfferElement>
+                  <OfferElement>duży parking</OfferElement>
+                  <OfferElement>darmowy internet</OfferElement>
+                  <OfferElement>miejsce na ognisko/grilla</OfferElement>
+                  <OfferElement>
+                    miejsce do gry w siatkówkę lub tenisa
+                  </OfferElement>
+                  <OfferElement>
+                    piaskownica z zabawkami dla dzieci
+                  </OfferElement>
+                </OfferList>
                 <BtnWrap>
                   <ButtonRouter to='/offer' primary={0} dark={0} big={1}>
                     Zobacz więcej

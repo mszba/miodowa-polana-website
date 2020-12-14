@@ -15,6 +15,7 @@ export const ButtonAnchor = styled.a`
   border: none;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 

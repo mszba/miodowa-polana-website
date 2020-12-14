@@ -32,7 +32,7 @@ const GallerySection = () => {
         <GalleryWrapper>
           <TextWrapper>
             <TopLine>Galeria</TopLine>
-            <Heading>Galeria miodowej polanki</Heading>
+            <Heading>Galeria miodowej polany</Heading>
           </TextWrapper>
           <PicturesWrapper className='pictures-wrapper'>
             <PicutreElementWrap className='picture-element-wrap'>

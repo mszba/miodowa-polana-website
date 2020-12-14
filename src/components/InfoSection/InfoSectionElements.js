@@ -88,10 +88,19 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#240D00' : '#F7F8FA')};
+`;
+
+export const AttractionsList = styled.ul`
+  padding-top: 15px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+`;
+export const AttractionsElement = styled.li`
+  font-size: 18px;
+  color: #f7f8fa;
 `;
 
 export const BtnWrap = styled.div`
