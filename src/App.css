@@ -27,3 +27,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #8D7000;
 }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

@@ -28,6 +28,7 @@ import galleryPicture23 from '../../images/gallerypicture23.jpg';
 import galleryPicture24 from '../../images/gallerypicture24.jpg';
 import galleryPicture25 from '../../images/gallerypicture25.jpg';
 import galleryPicture26 from '../../images/gallerypicture26.jpg';
+import galleryPicture27 from '../../images/gallerypicture27.jpg';
 
 export const pictures = [
   { id: 1, image: picture21 },
@@ -59,4 +60,5 @@ export const pictures = [
   { id: 27, image: galleryPicture24 },
   { id: 28, image: galleryPicture25 },
   { id: 29, image: galleryPicture26 },
+  { id: 30, image: galleryPicture27 },
 ];

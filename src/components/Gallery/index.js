@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 
 import { ButtonAnchor } from '../ButtonElements';
 import { Heading, TopLine } from '../InfoSection/InfoSectionElements';
+import Lightbox from 'react-image-lightbox';
+
 import {
   PageContainer,
   PageWrapper,
@@ -12,6 +14,7 @@ import {
   ArrowBackward,
   ArrowLeft,
 } from '../PageElements';
+
 import {
   PicturesWrapper,
   PicutreElementWrap,
@@ -20,12 +23,13 @@ import {
 
 import { pictures } from './Data';
 
-import GalleryModal from './index';
-
 import './Gallery.css';
+import 'react-image-lightbox/style.css';
 
 const Gallery = () => {
   const [hover, setHover] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   let history = useHistory();
 
   const onHover = () => setHover(!hover);
@@ -34,12 +38,28 @@ const Gallery = () => {
     history.push('/');
   };
 
-  const handleSlider = (e) => {
-    console.log(e.target);
-  };
   return (
     <>
       <PageContainer lightBg={0}>
+        {isOpen && (
+          <Lightbox
+            mainSrc={pictures[photoIndex].image}
+            nextSrc={pictures[(photoIndex + 1) % pictures.length].image}
+            prevSrc={
+              pictures[(photoIndex + pictures.length - 1) % pictures.length]
+                .image
+            }
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex(
+                (photoIndex + pictures.length - 1) % pictures.length
+              )
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % pictures.length)
+            }
+          />
+        )}
         <PageWrapper style={{ maxWidth: '2000px' }}>
           <TextWrapper style={{ marginTop: '10%' }}>
             <TopLine>Galeria</TopLine>
@@ -56,7 +76,11 @@ const Gallery = () => {
                   <PictureElement
                     className='gallery-picture-element'
                     src={picture.image}
-                    onClick={handleSlider}
+                    data-key={picture.id}
+                    onClick={(e) => {
+                      setIsOpen(true);
+                      setPhotoIndex(e.target.getAttribute('data-key') - 1);
+                    }}
                   />
                 </PicutreElementWrap>
               ))}
