@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { ButtonAnchor } from '../ButtonElements';
 import { Heading, TopLine } from '../InfoSection/InfoSectionElements';
@@ -30,8 +31,13 @@ import {
 
 const Offer = () => {
   const [hover, setHover] = useState(false);
+  let history = useHistory();
 
   const onHover = () => setHover(!hover);
+
+  const handleClick = () => {
+    history.push('/');
+  };
   return (
     <>
       <PageContainer lightBg={1}>
@@ -118,7 +124,8 @@ const Offer = () => {
                 primary={0}
                 dark={0}
                 onMouseEnter={onHover}
-                onMouseLeave={onHover}>
+                onMouseLeave={onHover}
+                onClick={handleClick}>
                 {hover ? <ArrowBackward /> : <ArrowLeft />} Wróć
               </ButtonAnchor>
             </BtnWrap>
