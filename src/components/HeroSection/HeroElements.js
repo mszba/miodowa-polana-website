@@ -19,6 +19,10 @@ export const HeroContainer = styled.div`
     background: rgba(36, 13, 0, 0.3);
     z-index: 2;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -50,8 +54,9 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  width: 50%;
+  width: 80%;
   margin-left: 4vw;
+  max-width: 1200px;
   padding-right: 30px;
   font-weight: 700;
   text-align: left;
@@ -65,11 +70,12 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    width: 90%;
   }
 `;
 
 export const HeroTextWrap = styled.div`
-  margin-left: 63vw;
+  margin-left: 55vw;
   margin-top: 5vh;
   margin-bottom: -150px;
   display: flex;

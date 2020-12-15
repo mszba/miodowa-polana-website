@@ -39,7 +39,10 @@ const HeroSection = () => {
               },
             },
           }}> */}
-        <HeroH1>Odpocznij w Bieszczadach</HeroH1>
+        <HeroH1>
+          <span>Odpocznij w </span>
+          <span>Bieszczadach</span>
+        </HeroH1>
         {/* </motion.div> */}
         <HeroTextWrap>
           <HeroP>
