@@ -49,28 +49,26 @@ const HeroSection = () => {
           </motion.div>
         </HeroH1>
 
-        <motion.div
+        <HeroTextWrap
           initial='hidden'
           animate='visible'
           variants={textAnimation}
           transition={textTransition}>
-          <HeroTextWrap>
-            <HeroP>
-              Miodowa Polana to miejsce , w którym doświadczych bliskiego
-              kontaktu z naturą. Obiekt znajduje się w strefie uzdrowiskowej
-              oraz spokojnej i cichej okolicy.
-            </HeroP>
-            <HeroBtnWrap>
-              <ButtonAnchor
-                href='https://www.booking.com/hotel/pl/miodowa-polana.pl.html'
-                primary={1}
-                dark={1}
-                big='true'>
-                Zarezerwuj teraz
-              </ButtonAnchor>
-            </HeroBtnWrap>
-          </HeroTextWrap>
-        </motion.div>
+          <HeroP>
+            Miodowa Polana to miejsce , w którym doświadczych bliskiego kontaktu
+            z naturą. Obiekt znajduje się w strefie uzdrowiskowej oraz spokojnej
+            i cichej okolicy.
+          </HeroP>
+          <HeroBtnWrap>
+            <ButtonAnchor
+              href='https://www.booking.com/hotel/pl/miodowa-polana.pl.html'
+              primary={1}
+              dark={1}
+              big='true'>
+              Zarezerwuj teraz
+            </ButtonAnchor>
+          </HeroBtnWrap>
+        </HeroTextWrap>
       </HeroContent>
     </HeroContainer>
   );

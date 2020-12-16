@@ -96,8 +96,9 @@ export const infoTextAnimation = {
 };
 
 export const infoTextTransition = {
-  duration: 0.6,
-  delay: 0.2,
+  duration: 0.8,
+  delay: 0.4,
+  ease: [0.165, 0.84, 0.44, 1],
 };
 
 export const socialAnimation = {
@@ -108,5 +109,14 @@ export const socialAnimation = {
   visible: {
     opacity: 1,
     y: 0,
+  },
+};
+
+export const hexagonAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
   },
 };

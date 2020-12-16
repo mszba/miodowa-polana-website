@@ -113,7 +113,7 @@ export const HexagonWrap = styled.div`
   max-width: 555px;
 `;
 
-export const Hexagon = styled.div`
+export const Hexagon = styled(motion.div)`
   transform-origin: center;
   transition: transform 0.4s;
   &:hover {

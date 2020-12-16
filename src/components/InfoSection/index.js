@@ -27,6 +27,7 @@ import {
   titleAnimation,
   titleAnimation2,
   infoTextTransition,
+  hexagonAnimation,
 } from '../animations/index';
 
 const InfoSection = () => {
@@ -109,22 +110,50 @@ const InfoSection = () => {
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#FFCA00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.4,
+                    }}
                   />
 
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#F7F8FA' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.7,
+                    }}
                   />
                 </HexagonWrap>
                 <HexagonWrap className='hexagon-wrapper wrapper2'>
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#F7F8FA' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.3,
+                    }}
                   />
 
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#FFCA00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.6,
+                    }}
                   />
                 </HexagonWrap>
               </HexagonContainer>

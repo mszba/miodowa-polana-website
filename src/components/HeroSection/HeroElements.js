@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const HeroContainer = styled.div`
   position: relative;
@@ -74,7 +75,7 @@ export const HeroH1 = styled.h1`
   }
 `;
 
-export const HeroTextWrap = styled.div`
+export const HeroTextWrap = styled(motion.div)`
   margin-left: 55vw;
   margin-top: 5vh;
   margin-bottom: -150px;

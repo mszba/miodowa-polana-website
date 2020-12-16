@@ -25,6 +25,7 @@ import {
   titleAnimation,
   titleAnimation2,
   infoTextTransition,
+  hexagonAnimation,
 } from '../animations/index';
 
 const InfoSection2 = () => {
@@ -88,20 +89,48 @@ const InfoSection2 = () => {
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#240D00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.7,
+                    }}
                   />
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#FFCA00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.4,
+                    }}
                   />
                 </HexagonWrap>
                 <HexagonWrap className='hexagon-wrapper wrapper2'>
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#FFCA00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.6,
+                    }}
                   />
                   <Hexagon
                     className='hexagon-element-wrap'
                     style={{ background: '#240D00' }}
+                    initial='hidden'
+                    animate='visible'
+                    variants={hexagonAnimation}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.3,
+                    }}
                   />
                 </HexagonWrap>
               </HexagonContainer>
