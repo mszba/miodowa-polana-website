@@ -10,13 +10,21 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
+import { motion } from 'framer-motion';
+import { animationOne, tranistion } from '../components/animations';
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <>
+    <motion.div
+      initial='out'
+      animate='in'
+      exit='out'
+      variants={animationOne}
+      transition={tranistion}>
       <Aside isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -26,7 +34,7 @@ const Home = () => {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
-    </>
+    </motion.div>
   );
 };
 
