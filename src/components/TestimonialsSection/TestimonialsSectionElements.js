@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { FaQuoteLeft } from 'react-icons/fa';
 
@@ -31,7 +32,7 @@ export const TextWrapper = styled.div`
     margin-top: 2vw;
   }
 `;
-export const TopLine = styled.p`
+export const TopLine = styled(motion.p)`
   width: 100%;
   margin-bottom: 16px;
   font-size: 16px;
@@ -43,7 +44,7 @@ export const TopLine = styled.p`
   color: #ffca00;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled(motion.h1)`
   width: 100%;
   margin-bottom: 24px;
   text-align: center;

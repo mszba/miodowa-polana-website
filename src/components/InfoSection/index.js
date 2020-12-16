@@ -51,22 +51,23 @@ const InfoSection = () => {
           <InfoRow>
             <Column1>
               <TextWrapper>
-                <motion.div
+                <TopLine
                   initial='hidden'
                   animate='visible'
                   variants={titleAnimation}
                   transition={infoTextTransition}>
-                  <TopLine>Atrakcje</TopLine>
-                </motion.div>
-                <motion.div
+                  Atrakcje
+                </TopLine>
+
+                <Heading
+                  lightText={true}
                   initial='hidden'
                   animate='visible'
                   variants={titleAnimation2}
                   transition={infoTextTransition}>
-                  <Heading lightText={true}>
-                    Przeżyjesz tutaj niesamowitą przygodę
-                  </Heading>
-                </motion.div>
+                  Przeżyjesz tutaj niesamowitą przygodę
+                </Heading>
+
                 <motion.div
                   initial='hidden'
                   animate='visible'

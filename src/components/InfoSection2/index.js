@@ -35,20 +35,23 @@ const InfoSection2 = () => {
           <InfoRow className='flex-container'>
             <Column1>
               <TextWrapper>
-                <motion.div
+                <TopLine
                   initial='hidden'
                   animate='visible'
                   variants={titleAnimation}
                   transition={infoTextTransition}>
-                  <TopLine>Oferta</TopLine>
-                </motion.div>
-                <motion.div
+                  Oferta
+                </TopLine>
+
+                <Heading
+                  lightText={false}
                   initial='hidden'
                   animate='visible'
                   variants={titleAnimation2}
                   transition={infoTextTransition}>
-                  <Heading lightText={false}>Oferta miodowej polany</Heading>
-                </motion.div>
+                  Oferta miodowej polany
+                </Heading>
+
                 <motion.div
                   initial='hidden'
                   animate='visible'

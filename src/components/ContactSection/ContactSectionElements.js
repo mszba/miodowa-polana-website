@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { FaFacebook } from 'react-icons/fa';
 
@@ -24,7 +25,7 @@ export const ContactWrapper = styled.div`
   }
 `;
 
-export const MapWrap = styled.div`
+export const MapWrap = styled(motion.div)`
   width: 800px;
   height: 600px;
   display: flex;
@@ -59,7 +60,7 @@ export const TextWrap = styled.div`
     margin-bottom: 2vh;
   }
 `;
-export const Heading = styled.div`
+export const Heading = styled(motion.div)`
   margin-bottom: 24px;
   line-height: 1.1;
   font-size: 48px;
@@ -71,7 +72,7 @@ export const Heading = styled.div`
     font-size: 32px;
   }
 `;
-export const AddressWrap = styled.div`
+export const AddressWrap = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,7 +99,7 @@ export const AddressPhoneLink = styled.a`
   color: #f7f8fa;
 `;
 
-export const SocialsWrap = styled.div`
+export const SocialsWrap = styled(motion.div)`
   display: flex;
   flex-direction: column;
 `;

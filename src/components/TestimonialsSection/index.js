@@ -23,7 +23,6 @@ import { testimonials } from './Data';
 
 import './Carousel.css';
 
-import { motion } from 'framer-motion';
 import {
   titleAnimation,
   titleAnimation2,
@@ -50,26 +49,20 @@ const TestimonialsSection = () => {
       <TestimonialsContainer id='testimonials'>
         <TestimonialsWrapper>
           <TextWrapper>
-            <motion.div
-              style={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
+            <TopLine
               initial='hidden'
               animate='visible'
               variants={titleAnimation}
               transition={infoTextTransition}>
-              <TopLine>Opinie</TopLine>
-            </motion.div>
-            <motion.div
+              Opinie
+            </TopLine>
+            <Heading
               initial='hidden'
               animate='visible'
               variants={titleAnimation2}
               transition={infoTextTransition}>
-              <Heading>Co nasi klieni o nas myślą</Heading>
-            </motion.div>
+              Co nasi klieni o nas myślą
+            </Heading>
           </TextWrapper>
           <TestimonialsElementsWrapper>
             <Carousel

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const GalleryContainer = styled.div`
   background: #240d00;
@@ -40,7 +41,7 @@ export const TextWrapper = styled.div`
   align-items: flex-start;
 `;
 
-export const TopLine = styled.p`
+export const TopLine = styled(motion.p)`
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 16px;
@@ -50,7 +51,7 @@ export const TopLine = styled.p`
   color: #ffca00;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled(motion.h1)`
   margin-bottom: 24px;
   line-height: 1.1;
   font-size: 48px;
@@ -63,7 +64,7 @@ export const Heading = styled.h1`
   }
 `;
 
-export const PicturesWrapper = styled.div`
+export const PicturesWrapper = styled(motion.div)`
   height: 600px;
   margin-top: 1vw;
   padding-top: 15%;
