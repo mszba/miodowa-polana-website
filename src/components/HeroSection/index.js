@@ -15,6 +15,15 @@ import { ButtonAnchor } from '../ButtonElements';
 
 import Background from '../../images/picture-1.jpg';
 
+import {
+  titleAnimation,
+  titleTransition,
+  titleAnimation2,
+  titleTransition2,
+  textAnimation,
+  textTransition,
+} from '../animations/index';
+
 const HeroSection = () => {
   return (
     <HeroContainer id='home'>
@@ -22,44 +31,46 @@ const HeroSection = () => {
         <HeroPictureBg src={Background} alt='Widok na góry' />
       </HeroBg>
       <HeroContent>
-        {/* <motion.div
+        <HeroH1>
+          <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={titleAnimation}
+            transition={titleTransition}>
+            <span style={{ zIndex: 10 }}>Odpocznij w </span>
+          </motion.div>
+
+          <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={titleAnimation2}
+            transition={titleTransition2}>
+            <span>Bieszczadach</span>
+          </motion.div>
+        </HeroH1>
+
+        <motion.div
           initial='hidden'
           animate='visible'
-          variants={{
-            hidden: {
-              opacity: 0,
-              marginLeft: '-50vw',
-            },
-            visible: {
-              opacity: 1,
-              marginLeft: '4vw',
-              transition: {
-                duration: 0.5,
-                delay: 0.4,
-              },
-            },
-          }}> */}
-        <HeroH1>
-          <span>Odpocznij w </span>
-          <span>Bieszczadach</span>
-        </HeroH1>
-        {/* </motion.div> */}
-        <HeroTextWrap>
-          <HeroP>
-            Miodowa Polana to miejsce , w którym doświadczych bliskiego kontaktu
-            z naturą. Obiekt znajduje się w strefie uzdrowiskowej oraz spokojnej
-            i cichej okolicy.
-          </HeroP>
-          <HeroBtnWrap>
-            <ButtonAnchor
-              href='https://www.booking.com/hotel/pl/miodowa-polana.pl.html'
-              primary={1}
-              dark={1}
-              big='true'>
-              Zarezerwuj teraz
-            </ButtonAnchor>
-          </HeroBtnWrap>
-        </HeroTextWrap>
+          variants={textAnimation}
+          transition={textTransition}>
+          <HeroTextWrap>
+            <HeroP>
+              Miodowa Polana to miejsce , w którym doświadczych bliskiego
+              kontaktu z naturą. Obiekt znajduje się w strefie uzdrowiskowej
+              oraz spokojnej i cichej okolicy.
+            </HeroP>
+            <HeroBtnWrap>
+              <ButtonAnchor
+                href='https://www.booking.com/hotel/pl/miodowa-polana.pl.html'
+                primary={1}
+                dark={1}
+                big='true'>
+                Zarezerwuj teraz
+              </ButtonAnchor>
+            </HeroBtnWrap>
+          </HeroTextWrap>
+        </motion.div>
       </HeroContent>
     </HeroContainer>
   );

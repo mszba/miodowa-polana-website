@@ -23,6 +23,13 @@ import { testimonials } from './Data';
 
 import './Carousel.css';
 
+import { motion } from 'framer-motion';
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextTransition,
+} from '../animations/index';
+
 const TestimonialsSection = () => {
   const carouselRef = useRef(null);
   const totalPages = Math.ceil(testimonials.length);
@@ -43,8 +50,26 @@ const TestimonialsSection = () => {
       <TestimonialsContainer id='testimonials'>
         <TestimonialsWrapper>
           <TextWrapper>
-            <TopLine>Opinie</TopLine>
-            <Heading>Co nasi klieni o nas myślą</Heading>
+            <motion.div
+              style={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation}
+              transition={infoTextTransition}>
+              <TopLine>Opinie</TopLine>
+            </motion.div>
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
+              <Heading>Co nasi klieni o nas myślą</Heading>
+            </motion.div>
           </TextWrapper>
           <TestimonialsElementsWrapper>
             <Carousel

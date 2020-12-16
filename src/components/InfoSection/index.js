@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { ButtonRouter } from '../ButtonElements';
 
 import {
@@ -20,7 +22,28 @@ import {
 
 import './Hexagon.css';
 
+import { motion } from 'framer-motion';
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextTransition,
+} from '../animations/index';
+
 const InfoSection = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      const attractionsContainer = document.getElementById('attractions');
+      console.log(scrollY, attractionsContainer.offsetTop - 160);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <InfoContainer id='attractions' lightBg={false}>
@@ -28,33 +51,55 @@ const InfoSection = () => {
           <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>Atrakcje</TopLine>
-                <Heading lightText={true}>
-                  Przeżyjesz tutaj niesamowitą przygodę
-                </Heading>
-                <Subtitle darkText={false}>
-                  W naszej okolicy znajduje się wiele ciekakawych atrakcji dla
-                  chcących odpocząć, dzieci jak i również aktywnych fizycznie.
-                  Każdy znajdzie coś dla siebie:
-                </Subtitle>
-                <AttractionsList>
-                  <AttractionsElement>
-                    piesze i rowerowe szlaki turystyczne
-                  </AttractionsElement>
-                  <AttractionsElement>kąpieliska i baseny</AttractionsElement>
-                  <AttractionsElement>
-                    wypożyczalnie sprzętu wodnego
-                  </AttractionsElement>
-                  <AttractionsElement>stadniny koni</AttractionsElement>
-                  <AttractionsElement>
-                    stoki narciarskie oraz wiele innych
-                  </AttractionsElement>
-                </AttractionsList>
-                <BtnWrap>
-                  <ButtonRouter to='/attractions' primary={1} dark={1} big={1}>
-                    Zobacz więcej
-                  </ButtonRouter>
-                </BtnWrap>
+                <motion.div
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation}
+                  transition={infoTextTransition}>
+                  <TopLine>Atrakcje</TopLine>
+                </motion.div>
+                <motion.div
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation2}
+                  transition={infoTextTransition}>
+                  <Heading lightText={true}>
+                    Przeżyjesz tutaj niesamowitą przygodę
+                  </Heading>
+                </motion.div>
+                <motion.div
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation2}
+                  transition={infoTextTransition}>
+                  <Subtitle darkText={false}>
+                    W naszej okolicy znajduje się wiele ciekakawych atrakcji dla
+                    chcących odpocząć, dzieci jak i również aktywnych fizycznie.
+                    Każdy znajdzie coś dla siebie:
+                  </Subtitle>
+                  <AttractionsList>
+                    <AttractionsElement>
+                      piesze i rowerowe szlaki turystyczne
+                    </AttractionsElement>
+                    <AttractionsElement>kąpieliska i baseny</AttractionsElement>
+                    <AttractionsElement>
+                      wypożyczalnie sprzętu wodnego
+                    </AttractionsElement>
+                    <AttractionsElement>stadniny koni</AttractionsElement>
+                    <AttractionsElement>
+                      stoki narciarskie oraz wiele innych
+                    </AttractionsElement>
+                  </AttractionsList>
+                  <BtnWrap>
+                    <ButtonRouter
+                      to='/attractions'
+                      primary={1}
+                      dark={1}
+                      big={1}>
+                      Zobacz więcej
+                    </ButtonRouter>
+                  </BtnWrap>
+                </motion.div>
               </TextWrapper>
             </Column1>
             <Column2>

@@ -19,6 +19,13 @@ import picture4 from '../../images/picture-24.jpg';
 
 import { ButtonRouter } from '../ButtonElements';
 
+import { motion } from 'framer-motion';
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextTransition,
+} from '../animations/index';
+
 const GallerySection = () => {
   return (
     <>
@@ -31,23 +38,53 @@ const GallerySection = () => {
 
         <GalleryWrapper>
           <TextWrapper>
-            <TopLine>Galeria</TopLine>
-            <Heading>Galeria miodowej polany</Heading>
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation}
+              transition={infoTextTransition}>
+              <TopLine>Galeria</TopLine>
+            </motion.div>
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
+              <Heading>Galeria miodowej polany</Heading>
+            </motion.div>
           </TextWrapper>
-          <PicturesWrapper className='pictures-wrapper'>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture1} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture2} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture3} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture4} />
-            </PicutreElementWrap>
-          </PicturesWrapper>
+          <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={{
+              hidden: {
+                opacity: 0,
+                x: 60,
+              },
+              visible: {
+                opacity: 1,
+                x: 0,
+              },
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.6,
+            }}>
+            <PicturesWrapper className='pictures-wrapper'>
+              <PicutreElementWrap className='picture-element-wrap'>
+                <PictureElement className='picture-element' src={picture1} />
+              </PicutreElementWrap>
+              <PicutreElementWrap className='picture-element-wrap'>
+                <PictureElement className='picture-element' src={picture2} />
+              </PicutreElementWrap>
+              <PicutreElementWrap className='picture-element-wrap'>
+                <PictureElement className='picture-element' src={picture3} />
+              </PicutreElementWrap>
+              <PicutreElementWrap className='picture-element-wrap'>
+                <PictureElement className='picture-element' src={picture4} />
+              </PicutreElementWrap>
+            </PicturesWrapper>
+          </motion.div>
         </GalleryWrapper>
       </GalleryContainer>
     </>
