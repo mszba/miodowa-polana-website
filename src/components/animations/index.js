@@ -11,26 +11,19 @@ export const animationTwo = {
   in: {
     opacity: 1,
     y: 0,
-    scale: 1,
   },
   out: {
     opacity: 0,
-    y: '-100vh',
-    scale: 0.3,
   },
 };
 export const animationThree = {
   in: {
     opacity: 1,
-    x: -300,
-    scale: 1,
   },
   out: {
     opacity: 0,
-    x: 300,
   },
   end: {
-    x: 0,
     opacity: 1,
   },
 };
@@ -97,7 +90,7 @@ export const infoTextAnimation = {
 
 export const infoTextTransition = {
   duration: 0.8,
-  delay: 0.4,
+  delay: 0.5,
   ease: [0.165, 0.84, 0.44, 1],
 };
 
@@ -113,6 +106,15 @@ export const socialAnimation = {
 };
 
 export const hexagonAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+export const imageHexagonAnimation = {
   hidden: {
     opacity: 0,
   },

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import Carousel from 'react-elastic-carousel';
 
@@ -17,6 +17,7 @@ import {
   QuoteAuthor,
   QuotePictureWrap,
   QuotePictureImg,
+  ElementsWrap,
 } from './TestimonialsSectionElements';
 
 import { testimonials } from './Data';
@@ -30,6 +31,7 @@ import {
 } from '../animations/index';
 
 const TestimonialsSection = () => {
+  const [shouldAnimate, setShouldAnimate] = useState(false);
   const carouselRef = useRef(null);
   const totalPages = Math.ceil(testimonials.length);
   let resetTimeout;
@@ -44,59 +46,94 @@ const TestimonialsSection = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const testimonialsContainer = document.getElementById('testimonials');
+
+      if (scrollY >= testimonialsContainer.offsetTop - 500) {
+        setShouldAnimate(true);
+        console.log(scrollY, testimonialsContainer.offsetTop);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <TestimonialsContainer id='testimonials'>
         <TestimonialsWrapper>
-          <TextWrapper>
-            <TopLine
-              initial='hidden'
-              animate='visible'
-              variants={titleAnimation}
-              transition={infoTextTransition}>
-              Opinie
-            </TopLine>
-            <Heading
-              initial='hidden'
-              animate='visible'
-              variants={titleAnimation2}
-              transition={infoTextTransition}>
-              Co nasi klieni o nas myślą
-            </Heading>
-          </TextWrapper>
-          <TestimonialsElementsWrapper>
-            <Carousel
-              ref={carouselRef}
-              transitionMs={800}
-              pagination={false}
-              enableAutoPlay={true}
-              autoPlaySpeed={6000}
-              itemsToShow={1}
-              onNextEnd={({ index }) => {
-                clearTimeout(resetTimeout);
-                if (index + 1 === totalPages) {
-                  resetTimeout = setTimeout(() => {
-                    carouselRef.current.goTo(0);
-                  }, 6000);
-                }
-              }}>
-              {testimonials.map((item) => (
-                <TestimonialWrap key={item.id}>
-                  <QuoteIconWrap>
-                    <QuoteIcon />
-                  </QuoteIconWrap>
+          {shouldAnimate ? (
+            <ElementsWrap>
+              <TextWrapper>
+                <TopLine
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation}
+                  transition={infoTextTransition}>
+                  Opinie
+                </TopLine>
+                <Heading
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation2}
+                  transition={infoTextTransition}>
+                  Co nasi klieni o nas myślą
+                </Heading>
+              </TextWrapper>
+              <TestimonialsElementsWrapper
+                initial='hidden'
+                animate='visible'
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: 60,
+                  },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+                transition={infoTextTransition}>
+                <Carousel
+                  ref={carouselRef}
+                  transitionMs={800}
+                  pagination={false}
+                  enableAutoPlay={true}
+                  autoPlaySpeed={6000}
+                  itemsToShow={1}
+                  onNextEnd={({ index }) => {
+                    clearTimeout(resetTimeout);
+                    if (index + 1 === totalPages) {
+                      resetTimeout = setTimeout(() => {
+                        carouselRef.current.goTo(0);
+                      }, 6000);
+                    }
+                  }}>
+                  {testimonials.map((item) => (
+                    <TestimonialWrap key={item.id}>
+                      <QuoteIconWrap>
+                        <QuoteIcon />
+                      </QuoteIconWrap>
 
-                  <QuoteTextWrapper>
-                    <QuoteText>{item.text}</QuoteText>
-                    <QuoteAuthor>{item.author}</QuoteAuthor>
-                    <QuotePictureWrap>
-                      <QuotePictureImg src={item.image} />
-                    </QuotePictureWrap>
-                  </QuoteTextWrapper>
-                </TestimonialWrap>
-              ))}
-            </Carousel>
-          </TestimonialsElementsWrapper>
+                      <QuoteTextWrapper>
+                        <QuoteText>{item.text}</QuoteText>
+                        <QuoteAuthor>{item.author}</QuoteAuthor>
+                        <QuotePictureWrap>
+                          <QuotePictureImg src={item.image} />
+                        </QuotePictureWrap>
+                      </QuoteTextWrapper>
+                    </TestimonialWrap>
+                  ))}
+                </Carousel>
+              </TestimonialsElementsWrapper>
+            </ElementsWrap>
+          ) : null}
         </TestimonialsWrapper>
       </TestimonialsContainer>
     </>

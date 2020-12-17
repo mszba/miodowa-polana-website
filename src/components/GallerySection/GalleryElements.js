@@ -64,7 +64,7 @@ export const Heading = styled(motion.h1)`
   }
 `;
 
-export const PicturesWrapper = styled(motion.div)`
+export const PicturesWrapper = styled.div`
   height: 600px;
   margin-top: 1vw;
   padding-top: 15%;
@@ -75,11 +75,11 @@ export const PicturesWrapper = styled(motion.div)`
   }
 `;
 
-export const PicutreElementWrap = styled.div``;
+export const PicutreElementWrap = styled(motion.div)``;
 
 export const PictureElement = styled.img``;
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled(motion.div)`
   position: absolute;
   bottom: 8%;
   right: 10%;

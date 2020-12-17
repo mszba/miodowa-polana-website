@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { FaFacebook } from 'react-icons/fa';
 
 export const ContactContainer = styled.div`
+  height: 860px;
+  width: 100%;
   background: #240d00;
 `;
 

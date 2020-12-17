@@ -20,10 +20,13 @@ export const TestimonialsWrapper = styled.div`
   z-index: 1;
 `;
 
+export const ElementsWrap = styled.div``;
+
 export const TextWrapper = styled.div`
   width: 100%;
   /* padding-left: 15px; */
   margin-top: 4vw;
+  margin-bottom: 6vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,7 +62,7 @@ export const Heading = styled(motion.h1)`
   }
 `;
 
-export const TestimonialsElementsWrapper = styled.div`
+export const TestimonialsElementsWrapper = styled(motion.div)`
   width: 100%;
   display: flex;
   justify-content: space-between;

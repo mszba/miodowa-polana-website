@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import {
   GalleryContainer,
   GalleryWrapper,
@@ -23,39 +25,34 @@ import {
   titleAnimation,
   titleAnimation2,
   infoTextTransition,
+  imageHexagonAnimation,
 } from '../animations/index';
 
 const GallerySection = () => {
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const galleryContainer = document.getElementById('gallery');
+
+      if (scrollY >= galleryContainer.offsetTop - 500) {
+        setShouldAnimate(true);
+        console.log(scrollY, galleryContainer.offsetTop);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       <GalleryContainer id='gallery'>
-        <ButtonWrapper>
-          <ButtonRouter to='/gallery' primary={1} dark={1} big={1}>
-            Zobacz więcej
-          </ButtonRouter>
-        </ButtonWrapper>
-
-        <GalleryWrapper>
-          <TextWrapper>
-            <TopLine
-              initial='hidden'
-              animate='visible'
-              variants={titleAnimation}
-              transition={infoTextTransition}>
-              Galeria
-            </TopLine>
-
-            <Heading
-              initial='hidden'
-              animate='visible'
-              variants={titleAnimation2}
-              transition={infoTextTransition}>
-              Galeria miodowej polany
-            </Heading>
-          </TextWrapper>
-
-          <PicturesWrapper
-            className='pictures-wrapper'
+        {shouldAnimate ? (
+          <ButtonWrapper
             initial='hidden'
             animate='visible'
             variants={{
@@ -70,21 +67,71 @@ const GallerySection = () => {
             }}
             transition={{
               duration: 0.8,
-              delay: 0.6,
+              delay: 0.8,
             }}>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture1} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture2} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture3} />
-            </PicutreElementWrap>
-            <PicutreElementWrap className='picture-element-wrap'>
-              <PictureElement className='picture-element' src={picture4} />
-            </PicutreElementWrap>
-          </PicturesWrapper>
+            <ButtonRouter to='/gallery' primary={1} dark={1} big={1}>
+              Zobacz więcej
+            </ButtonRouter>
+          </ButtonWrapper>
+        ) : null}
+
+        <GalleryWrapper>
+          {shouldAnimate ? (
+            <div>
+              <TextWrapper>
+                <TopLine
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation}
+                  transition={infoTextTransition}>
+                  Galeria
+                </TopLine>
+
+                <Heading
+                  initial='hidden'
+                  animate='visible'
+                  variants={titleAnimation2}
+                  transition={infoTextTransition}>
+                  Galeria miodowej polany
+                </Heading>
+              </TextWrapper>
+
+              <PicturesWrapper className='pictures-wrapper'>
+                <PicutreElementWrap
+                  initial='hidden'
+                  animate='visible'
+                  variants={imageHexagonAnimation}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className='picture-element-wrap'>
+                  <PictureElement className='picture-element' src={picture1} />
+                </PicutreElementWrap>
+                <PicutreElementWrap
+                  initial='hidden'
+                  animate='visible'
+                  variants={imageHexagonAnimation}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  className='picture-element-wrap'>
+                  <PictureElement className='picture-element' src={picture2} />
+                </PicutreElementWrap>
+                <PicutreElementWrap
+                  initial='hidden'
+                  animate='visible'
+                  variants={imageHexagonAnimation}
+                  transition={{ duration: 0.6, delay: 0.9 }}
+                  className='picture-element-wrap'>
+                  <PictureElement className='picture-element' src={picture3} />
+                </PicutreElementWrap>
+                <PicutreElementWrap
+                  initial='hidden'
+                  animate='visible'
+                  variants={imageHexagonAnimation}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className='picture-element-wrap'>
+                  <PictureElement className='picture-element' src={picture4} />
+                </PicutreElementWrap>
+              </PicturesWrapper>
+            </div>
+          ) : null}
         </GalleryWrapper>
       </GalleryContainer>
     </>
