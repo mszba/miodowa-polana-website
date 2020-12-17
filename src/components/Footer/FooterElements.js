@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 38px 24px;
+  padding: 28px 24px;
   margin: 0 auto;
   max-width: 1100px;
   display: flex;
@@ -30,10 +30,9 @@ export const FooterLogoLink = styled.a`
   cursor: pointer;
 `;
 
-export const FooterLogo = styled.div`
-  width: 80px;
-  height: 80px;
-  background: red;
+export const FooterLogo = styled.img`
+  width: 100px;
+  height: 100px;
 `;
 
 export const WebsiteRights = styled.small`

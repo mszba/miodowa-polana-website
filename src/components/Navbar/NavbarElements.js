@@ -35,9 +35,14 @@ export const NavLogo = styled(LinkRouter)`
   margin-left: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-self: flex-start;
   font-size: 1.5rem;
   cursor: pointer;
+`;
+
+export const NavImg = styled.img`
+  height: 70px;
 `;
 
 export const MobileIconBars = styled.div`

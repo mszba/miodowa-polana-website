@@ -8,6 +8,8 @@ import {
   WebsiteRights,
 } from './FooterElements';
 
+import beeLogo from '../../images/beeLogo.svg';
+
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -17,7 +19,7 @@ const Footer = () => {
       <FooterContainer>
         <FooterWrap>
           <FooterLogoLink to='/' onClick={toggleHome}>
-            <FooterLogo></FooterLogo>
+            <FooterLogo src={beeLogo} alt='logo' />
           </FooterLogoLink>
           <WebsiteRights>
             Miodowa Polana Na Bercu &copy; {new Date().getFullYear()} All rights

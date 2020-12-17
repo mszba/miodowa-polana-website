@@ -5,6 +5,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  NavImg,
   MobileIconBars,
   NavMenu,
   NavItem,
@@ -14,6 +15,8 @@ import {
   NavPhoneLink,
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
+
+import beeLogo from '../../images/beeLogo.svg';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -42,12 +45,7 @@ const Navbar = ({ toggle }) => {
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
         <NavLogo to='/' onClick={toggleHome}>
-          <div
-            style={{
-              background: 'red',
-              width: '70px',
-              height: '50px',
-            }}></div>
+          <NavImg src={beeLogo} alt='logo' />
         </NavLogo>
         <MobileIconBars onClick={toggle}>
           <FaBars />
@@ -59,8 +57,7 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact='true'
-              offset={-80}>
+              exact='true'>
               Atrakcje
             </NavLink>
           </NavItem>
@@ -70,8 +67,7 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact='true'
-              offset={-80}>
+              exact='true'>
               Oferta
             </NavLink>
           </NavItem>
