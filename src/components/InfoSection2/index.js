@@ -39,7 +39,6 @@ const InfoSection2 = () => {
 
       if (scrollY >= offerContainer.offsetTop - 500) {
         setShouldAnimate(true);
-        console.log(scrollY, offerContainer.offsetTop);
       }
     };
 

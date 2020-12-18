@@ -53,7 +53,6 @@ const TestimonialsSection = () => {
 
       if (scrollY >= testimonialsContainer.offsetTop - 500) {
         setShouldAnimate(true);
-        console.log(scrollY, testimonialsContainer.offsetTop);
       }
     };
 

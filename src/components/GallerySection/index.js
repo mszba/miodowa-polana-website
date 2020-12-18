@@ -38,7 +38,6 @@ const GallerySection = () => {
 
       if (scrollY >= galleryContainer.offsetTop - 500) {
         setShouldAnimate(true);
-        console.log(scrollY, galleryContainer.offsetTop);
       }
     };
 

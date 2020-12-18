@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import CookieConsent from 'react-cookie-consent';
 
 import Navbar from '../components/Navbar/index';
 import Aside from '../components/Aside';
@@ -12,6 +13,8 @@ import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
 import { animationOne, tranistion } from '../components/animations';
+
+import './cookieConsent.css';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +37,16 @@ const Home = () => {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+      <CookieConsent
+        disableStyles={true}
+        buttonClasses='cookiesBtn'
+        containerClasses='cookiesContainer'
+        contentClasses='cookiesContent'
+        buttonText='Zgoda'>
+        Ta strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym
+        poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich
+        użycie.
+      </CookieConsent>
     </motion.div>
   );
 };
