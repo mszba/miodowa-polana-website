@@ -38,7 +38,7 @@ const InfoSection = () => {
       const scrollY = window.scrollY;
       const attractionsContainer = document.getElementById('attractions');
 
-      if (scrollY >= attractionsContainer.offsetTop - 400) {
+      if (scrollY >= attractionsContainer.offsetTop - 500) {
         setShouldAnimate(true);
       }
     };

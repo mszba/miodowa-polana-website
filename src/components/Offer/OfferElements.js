@@ -19,7 +19,8 @@ export const PageContentText = styled.p`
 `;
 
 export const PageContentMainOffers = styled(motion.div)`
-  margin-bottom: 3vw;
+  margin-bottom: 30px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;

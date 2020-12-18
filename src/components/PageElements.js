@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#240D00')};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 `;
 
@@ -18,7 +18,7 @@ export const PageWrapper = styled.div`
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
-  padding: 8vh 24px;
+  padding: 2vw 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@ export const PageWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   margin-bottom: 2vw;
-  margin-top: 11%;
+  margin-top: 5vw;
   width: 100%;
   display: flex;
   flex-direction: column;
