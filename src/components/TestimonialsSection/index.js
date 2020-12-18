@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
                   animate='visible'
                   variants={titleAnimation2}
                   transition={infoTextTransition}>
-                  Co nasi klieni o nas myślą
+                  Co nasi klienci o nas myślą
                 </Heading>
               </TextWrapper>
               <TestimonialsElementsWrapper

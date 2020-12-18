@@ -12,7 +12,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
-import { animationOne, tranistion } from '../components/animations';
+import { pageAnimation, tranistion } from '../components/animations';
 
 import './cookieConsent.css';
 
@@ -26,7 +26,7 @@ const Home = () => {
       initial='out'
       animate='in'
       exit='out'
-      variants={animationOne}
+      variants={pageAnimation}
       transition={tranistion}>
       <Aside isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />

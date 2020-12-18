@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import Gallery from '../components/Gallery/index';
 import ScrollToTop from '../components/ScrollToTop';
 
-import { animationOne } from '../components/animations';
+import { pageAnimation } from '../components/animations';
 
 const GalleryPage = () => {
   return (
-    <motion.div initial='out' animate='in' exit='out' variants={animationOne}>
+    <motion.div initial='out' animate='in' exit='out' variants={pageAnimation}>
       <ScrollToTop />
       <Gallery />
     </motion.div>

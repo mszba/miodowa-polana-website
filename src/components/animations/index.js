@@ -1,30 +1,10 @@
-export const animationOne = {
-  in: {
-    opacity: 1,
-  },
-  out: {
-    opacity: 0,
-  },
-};
-
-export const animationTwo = {
+export const pageAnimation = {
   in: {
     opacity: 1,
     y: 0,
   },
   out: {
     opacity: 0,
-  },
-};
-export const animationThree = {
-  in: {
-    opacity: 1,
-  },
-  out: {
-    opacity: 0,
-  },
-  end: {
-    opacity: 1,
   },
 };
 
@@ -90,7 +70,7 @@ export const infoTextAnimation = {
 
 export const infoTextTransition = {
   duration: 0.8,
-  delay: 0.5,
+  delay: 0.35,
   ease: [0.165, 0.84, 0.44, 1],
 };
 
