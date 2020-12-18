@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { MdKeyboardArrowLeft, MdArrowBack } from 'react-icons/md';
 
@@ -39,16 +40,17 @@ export const PageContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `;
 
-export const PageText = styled.p`
+export const PageText = styled(motion.p)`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ lightText }) => (lightText ? '#F7F8FA' : '#240D00')};
 `;
 
-export const PageList = styled.ul`
+export const PageList = styled(motion.ul)`
   margin: 18px 18px;
   color: ${({ lightText }) => (lightText ? '#F7F8FA' : '#240D00')};
 `;
@@ -66,7 +68,7 @@ export const PageListElement = styled.li`
   color: inherit;
 `;
 
-export const BtnWrap = styled.div`
+export const BtnWrap = styled(motion.div)`
   margin: 4% 0;
   display: flex;
   justify-content: flex-start;

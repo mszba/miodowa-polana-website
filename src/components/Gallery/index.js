@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import Lightbox from 'react-image-lightbox';
+
 import { ButtonAnchor } from '../ButtonElements';
 import { Heading, TopLine } from '../InfoSection/InfoSectionElements';
-import Lightbox from 'react-image-lightbox';
 
 import {
   PageContainer,
@@ -20,6 +21,13 @@ import {
   PicutreElementWrap,
   PictureElement,
 } from './GalleryElements';
+
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextAnimation,
+  infoTextTransition,
+} from '../animations/index';
 
 import { pictures } from './Data';
 
@@ -62,17 +70,42 @@ const Gallery = () => {
         )}
         <PageWrapper style={{ maxWidth: '2000px' }}>
           <TextWrapper style={{ marginTop: '10%' }}>
-            <TopLine>Galeria</TopLine>
-            <Heading style={{ textAlign: 'center' }} lightText={1}>
+            <TopLine
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation}
+              transition={infoTextTransition}>
+              Galeria
+            </TopLine>
+            <Heading
+              style={{ textAlign: 'center' }}
+              lightText={1}
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
               Więcej zdjęć
             </Heading>
           </TextWrapper>
           <PageContent>
             <PicturesWrapper className='gallery-pictures-wrapper'>
-              {pictures.map((picture) => (
+              {pictures.map((picture, index) => (
                 <PicutreElementWrap
                   key={picture.id}
-                  className='gallery-picture-element-wrap'>
+                  className='gallery-picture-element-wrap'
+                  initial='hidden'
+                  animate='visible'
+                  variants={{
+                    hidden: {
+                      opacity: 0,
+                    },
+                    visible: {
+                      opacity: 1,
+                      transition: {
+                        delay: index * 0.1,
+                      },
+                    },
+                  }}>
                   <PictureElement
                     className='gallery-picture-element'
                     src={picture.image}
@@ -86,7 +119,16 @@ const Gallery = () => {
               ))}
             </PicturesWrapper>
 
-            <BtnWrap style={{ margin: '6% 0' }}>
+            <BtnWrap
+              style={{ margin: '6% 0' }}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={{
+                duration: 0.8,
+                delay: 3,
+                ease: [0.165, 0.84, 0.44, 1],
+              }}>
               <ButtonAnchor
                 style={{ marginLeft: '6%' }}
                 primary={1}

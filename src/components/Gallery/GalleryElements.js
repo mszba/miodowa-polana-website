@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const PicturesWrapper = styled.div`
   margin-top: 1vw;
@@ -12,6 +13,6 @@ export const PicturesWrapper = styled.div`
   }
 `;
 
-export const PicutreElementWrap = styled.div``;
+export const PicutreElementWrap = styled(motion.div)``;
 
 export const PictureElement = styled.img``;

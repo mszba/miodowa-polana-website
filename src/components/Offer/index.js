@@ -29,6 +29,13 @@ import {
   FamilyIcon,
 } from './OfferElements';
 
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextAnimation,
+  infoTextTransition,
+} from '../animations/index';
+
 const Offer = () => {
   const [hover, setHover] = useState(false);
   let history = useHistory();
@@ -43,13 +50,29 @@ const Offer = () => {
       <PageContainer lightBg={1}>
         <PageWrapper>
           <TextWrapper style={{ marginBottom: 0 }}>
-            <TopLine>Oferta</TopLine>
-            <Heading style={{ textAlign: 'center' }} lightText={0}>
+            <TopLine
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation}
+              transition={infoTextTransition}>
+              Oferta
+            </TopLine>
+            <Heading
+              style={{ textAlign: 'center' }}
+              lightText={0}
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
               Dowiedz się więcej o ofercie naszego obiektu
             </Heading>
           </TextWrapper>
           <PageContent>
-            <PageContentMainOffers>
+            <PageContentMainOffers
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
               <PageContentOffersWrap>
                 <PageContentOfferElement>
                   <FamilyIcon /> pokoje rodzinne
@@ -62,7 +85,12 @@ const Offer = () => {
                 </PageContentOfferElement>
               </PageContentOffersWrap>
             </PageContentMainOffers>
-            <PageText lightText={0}>
+            <PageText
+              lightText={0}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               W naszym obiekcie znajduje się siedem pokoi do państwa dyspozycji
               (1,2,3,4 - osobowe), każdy pokój dysponuje prywatną łazienką,
               telewizorem i bezprzewodowym internetem. Część pokoi posiada
@@ -76,7 +104,12 @@ const Offer = () => {
               lub ogniska, boisko do gry w siatkówkę, tenisa oraz miejsce dla
               dzieci. Dodatkowo możliwość prania i prasowania.
             </PageText>
-            <PageList lightText={0}>
+            <PageList
+              lightText={0}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <PageListTitle lightText={0}>Inne udogodnienia</PageListTitle>
               <PageListElement>sklep - 800m</PageListElement>
               <PageListElement>Kościół Rzymskokatolicki - 1km</PageListElement>
@@ -87,7 +120,11 @@ const Offer = () => {
                 port lotniczy Jasionka (Rzeszów) - 100km
               </PageListElement>
             </PageList>
-            <PageContentElement>
+            <PageContentElement
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <PageListTitle style={{ paddingLeft: '20px' }} lightText={0}>
                 Ceny
               </PageListTitle>
@@ -97,7 +134,11 @@ const Offer = () => {
               </PageContentText>
             </PageContentElement>
 
-            <PageContentElement>
+            <PageContentElement
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <PageContentText
                 style={{
                   textAlign: 'center',
@@ -119,7 +160,11 @@ const Offer = () => {
               </NavPhoneLink>
             </PageContentElement>
 
-            <BtnWrap>
+            <BtnWrap
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <ButtonAnchor
                 primary={0}
                 dark={0}

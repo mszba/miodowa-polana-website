@@ -1,6 +1,6 @@
 import Attractions from '../components/Attractions/index';
 import { motion } from 'framer-motion';
-import { animationTwo, tranistion } from '../components/animations';
+import { animationTwo } from '../components/animations';
 
 const AttractionsPage = () => {
   return (

@@ -17,6 +17,13 @@ import {
   ArrowLeft,
 } from '../PageElements';
 
+import {
+  titleAnimation,
+  titleAnimation2,
+  infoTextAnimation,
+  infoTextTransition,
+} from '../animations/index';
+
 const Attractions = () => {
   const [hover, setHover] = useState(false);
   let history = useHistory();
@@ -31,13 +38,30 @@ const Attractions = () => {
       <PageContainer lightBg={0}>
         <PageWrapper>
           <TextWrapper>
-            <TopLine>Atrakcje</TopLine>
-            <Heading style={{ textAlign: 'center' }} lightText={1}>
+            <TopLine
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation}
+              transition={infoTextTransition}>
+              Atrakcje
+            </TopLine>
+            <Heading
+              style={{ textAlign: 'center' }}
+              lightText={1}
+              initial='hidden'
+              animate='visible'
+              variants={titleAnimation2}
+              transition={infoTextTransition}>
               Dowiedz się więcej co znajdziesz w okolicy
             </Heading>
           </TextWrapper>
           <PageContent>
-            <PageText lightText={1}>
+            <PageText
+              lightText={1}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               Miodowa Polana położona jest w małej miejscowości Myczków, który
               oddalony jest o 3km od jeziora solińskiego w Polańczyku oraz 5km
               od zapory wodnej w Solinie. Są to świetne miejsca do spędzenia
@@ -48,7 +72,12 @@ const Attractions = () => {
               której możliwy jest spacer oraz cieszenie się wspaniałymi
               widokami. Istnieje również opcja zwiedzenia jej wnętrza.
             </PageText>
-            <PageList lightText={1}>
+            <PageList
+              lightText={1}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <PageListTitle lightText={1}>
                 Inne atrakcje w okolicy:
               </PageListTitle>
@@ -82,7 +111,12 @@ const Attractions = () => {
                 punkt widokowy na Korbani - 16km
               </PageListElement>
             </PageList>
-            <BtnWrap>
+            <BtnWrap
+              lightText={1}
+              initial='hidden'
+              animate='visible'
+              variants={infoTextAnimation}
+              transition={infoTextTransition}>
               <ButtonAnchor
                 primary={1}
                 dark={1}

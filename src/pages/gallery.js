@@ -1,6 +1,6 @@
 import Gallery from '../components/Gallery/index';
 import { motion } from 'framer-motion';
-import { animationOne, tranistion } from '../components/animations';
+import { animationOne } from '../components/animations';
 
 const GalleryPage = () => {
   return (

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { FaParking, FaWifi } from 'react-icons/fa';
 
 import { IoIosPeople } from 'react-icons/io';
 
-export const PageContentElement = styled.div`
+export const PageContentElement = styled(motion.div)`
   display: flex;
   flex-direction: column;
 `;
@@ -17,7 +18,7 @@ export const PageContentText = styled.p`
   color: #240d00;
 `;
 
-export const PageContentMainOffers = styled.div`
+export const PageContentMainOffers = styled(motion.div)`
   margin-bottom: 3vw;
   width: 100%;
   display: flex;

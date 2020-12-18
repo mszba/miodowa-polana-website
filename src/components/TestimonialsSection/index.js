@@ -99,7 +99,11 @@ const TestimonialsSection = () => {
                     y: 0,
                   },
                 }}
-                transition={infoTextTransition}>
+                transition={{
+                  duration: 0.8,
+                  delay: 0.8,
+                  ease: [0.165, 0.84, 0.44, 1],
+                }}>
                 <Carousel
                   ref={carouselRef}
                   transitionMs={800}
