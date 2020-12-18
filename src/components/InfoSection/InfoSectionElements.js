@@ -20,6 +20,10 @@ export const InfoWrapper = styled.div`
   display: grid;
   justify-content: center;
   z-index: 1;
+
+  @media screen and (max-width: 480px) {
+    height: 600px;
+  }
 `;
 
 export const InfoRow = styled.div`

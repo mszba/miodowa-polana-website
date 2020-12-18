@@ -20,7 +20,11 @@ export const TestimonialsWrapper = styled.div`
   z-index: 1;
 `;
 
-export const ElementsWrap = styled.div``;
+export const ElementsWrap = styled.div`
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+  }
+`;
 
 export const TextWrapper = styled.div`
   width: 100%;

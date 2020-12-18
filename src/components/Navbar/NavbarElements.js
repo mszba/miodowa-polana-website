@@ -39,6 +39,10 @@ export const NavLogo = styled(LinkRouter)`
   justify-self: flex-start;
   font-size: 1.5rem;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 export const NavImg = styled.img`

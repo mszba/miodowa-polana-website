@@ -29,6 +29,9 @@ import {
 const ContactSection = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
+  const MAP_SOURCE =
+    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8926.973916687608!2d22.409877428789102!3d49.3874303194117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66dea3b923def2ed!2sMiodowa%20Polana%20Na%20Bercu!5e0!3m2!1spl!2spl!4v1607536674891!5m2!1spl!2spl';
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -45,6 +48,7 @@ const ContactSection = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <>
       <ContactContainer id='contact'>
@@ -67,9 +71,7 @@ const ContactSection = () => {
                 duration: 0.6,
                 delay: 0.3,
               }}>
-              <MapContainer
-                src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8926.973916687608!2d22.409877428789102!3d49.3874303194117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66dea3b923def2ed!2sMiodowa%20Polana%20Na%20Bercu!5e0!3m2!1spl!2spl!4v1607536674891!5m2!1spl!2spl'
-                allowfullscreen></MapContainer>
+              <MapContainer src={MAP_SOURCE} allowfullscreen></MapContainer>
             </MapWrap>
             <TextWrap>
               <Heading
