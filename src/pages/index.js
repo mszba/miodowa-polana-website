@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import Navbar from '../components/Navbar/index';
 import Aside from '../components/Aside';
@@ -10,7 +11,6 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
-import { motion } from 'framer-motion';
 import { animationOne, tranistion } from '../components/animations';
 
 const Home = () => {
