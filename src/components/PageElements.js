@@ -27,7 +27,7 @@ export const PageWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   margin-bottom: 2vw;
-  margin-top: 20%;
+  margin-top: 11%;
   width: 100%;
   display: flex;
   flex-direction: column;

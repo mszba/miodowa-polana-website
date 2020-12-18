@@ -69,7 +69,7 @@ const Gallery = () => {
           />
         )}
         <PageWrapper style={{ maxWidth: '2000px' }}>
-          <TextWrapper style={{ marginTop: '10%' }}>
+          <TextWrapper style={{ marginTop: '6%' }}>
             <TopLine
               initial='hidden'
               animate='visible'
