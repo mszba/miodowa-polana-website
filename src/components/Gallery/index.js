@@ -109,6 +109,7 @@ const Gallery = () => {
                   <PictureElement
                     className='gallery-picture-element'
                     src={picture.image}
+                    alt={picture.alt}
                     data-key={picture.id}
                     onClick={(e) => {
                       setIsOpen(true);

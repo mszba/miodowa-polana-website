@@ -102,7 +102,11 @@ const GallerySection = () => {
                   variants={imageHexagonAnimation}
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className='picture-element-wrap'>
-                  <PictureElement className='picture-element' src={picture1} />
+                  <PictureElement
+                    className='picture-element'
+                    src={picture1}
+                    alt='widok z balkonu'
+                  />
                 </PicutreElementWrap>
                 <PicutreElementWrap
                   initial='hidden'
@@ -110,7 +114,11 @@ const GallerySection = () => {
                   variants={imageHexagonAnimation}
                   transition={{ duration: 0.6, delay: 0.7 }}
                   className='picture-element-wrap'>
-                  <PictureElement className='picture-element' src={picture2} />
+                  <PictureElement
+                    className='picture-element'
+                    src={picture2}
+                    alt='ule pszczele'
+                  />
                 </PicutreElementWrap>
                 <PicutreElementWrap
                   initial='hidden'
@@ -118,7 +126,11 @@ const GallerySection = () => {
                   variants={imageHexagonAnimation}
                   transition={{ duration: 0.6, delay: 0.9 }}
                   className='picture-element-wrap'>
-                  <PictureElement className='picture-element' src={picture3} />
+                  <PictureElement
+                    className='picture-element'
+                    src={picture3}
+                    alt='hotel'
+                  />
                 </PicutreElementWrap>
                 <PicutreElementWrap
                   initial='hidden'
@@ -126,7 +138,11 @@ const GallerySection = () => {
                   variants={imageHexagonAnimation}
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className='picture-element-wrap'>
-                  <PictureElement className='picture-element' src={picture4} />
+                  <PictureElement
+                    className='picture-element'
+                    src={picture4}
+                    alt='panorama'
+                  />
                 </PicutreElementWrap>
               </PicturesWrapper>
             </div>
