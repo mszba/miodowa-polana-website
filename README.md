@@ -16,7 +16,7 @@ This project is a website of a guesthouse located in the mountains. Various user
 
 ## Technologies
 
-Project is created with:
+Project created with:
 
 - React: 17.0.1
 - styled-components: 5.2.1
