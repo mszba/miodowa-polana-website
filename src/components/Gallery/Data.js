@@ -1,64 +1,206 @@
-import picture21 from '../../images/picture-21.jpg';
-import picture22 from '../../images/picture-22.jpg';
-import picture24 from '../../images/picture-24.jpg';
-
-import galleryPicture1 from '../../images/gallerypicture1.JPG';
-import galleryPicture2 from '../../images/gallerypicture2.JPG';
-import galleryPicture3 from '../../images/gallerypicture3.jpg';
-import galleryPicture4 from '../../images/gallerypicture4.jpg';
-import galleryPicture5 from '../../images/gallerypicture5.JPG';
-import galleryPicture6 from '../../images/gallerypicture6.jpg';
-import galleryPicture7 from '../../images/gallerypicture7.JPG';
-import galleryPicture8 from '../../images/gallerypicture8.JPG';
-import galleryPicture9 from '../../images/gallerypicture9.JPG';
-import galleryPicture10 from '../../images/gallerypicture10.JPG';
-import galleryPicture11 from '../../images/gallerypicture11.jpg';
-import galleryPicture12 from '../../images/gallerypicture12.JPG';
-import galleryPicture13 from '../../images/gallerypicture13.JPG';
-import galleryPicture14 from '../../images/gallerypicture14.JPG';
-import galleryPicture15 from '../../images/gallerypicture15.JPG';
-import galleryPicture16 from '../../images/gallerypicture16.jpg';
-import galleryPicture17 from '../../images/gallerypicture17.jpg';
-import galleryPicture18 from '../../images/gallerypicture18.jpg';
-import galleryPicture19 from '../../images/gallerypicture19.jpg';
-import galleryPicture20 from '../../images/gallerypicture20.jpg';
-import galleryPicture21 from '../../images/gallerypicture21.jpg';
-import galleryPicture22 from '../../images/gallerypicture22.jpg';
-import galleryPicture23 from '../../images/gallerypicture23.jpg';
-import galleryPicture24 from '../../images/gallerypicture24.jpg';
-import galleryPicture25 from '../../images/gallerypicture25.jpg';
-import galleryPicture26 from '../../images/gallerypicture26.jpg';
-import galleryPicture27 from '../../images/gallerypicture27.jpg';
-
 export const pictures = [
-  { id: 1, image: picture21, alt: 'widok z balkonu' },
-  { id: 2, image: galleryPicture1, alt: 'widok hotelu z daleka' },
-  { id: 3, image: galleryPicture2, alt: 'ule pszczele' },
-  { id: 4, image: galleryPicture3, alt: 'potok Hylaty' },
-  { id: 5, image: galleryPicture4, alt: 'połoniny' },
-  { id: 6, image: galleryPicture5, alt: 'widok z okna' },
-  { id: 7, image: galleryPicture6, alt: 'jezioro Solińskie' },
-  { id: 8, image: picture22, alt: 'ule pszczele' },
-  { id: 9, image: galleryPicture7, alt: 'hotel z podwórkiem' },
-  { id: 10, image: galleryPicture8, alt: 'korytarz w hotelu' },
-  { id: 11, image: galleryPicture9, alt: 'podwórko' },
-  { id: 12, image: galleryPicture10, alt: 'sad' },
-  { id: 13, image: picture24, alt: 'panorama' },
-  { id: 14, image: galleryPicture11, alt: 'góry' },
-  { id: 15, image: galleryPicture12, alt: 'miodowa polana' },
-  { id: 16, image: galleryPicture13, alt: 'widok na podwórko' },
-  { id: 17, image: galleryPicture14, alt: 'polana' },
-  { id: 18, image: galleryPicture15, alt: 'widok z balkonu' },
-  { id: 19, image: galleryPicture16, alt: 'pokój' },
-  { id: 20, image: galleryPicture17, alt: 'kuchnia' },
-  { id: 21, image: galleryPicture18, alt: 'pokój' },
-  { id: 22, image: galleryPicture19, alt: 'łóżko' },
-  { id: 23, image: galleryPicture20, alt: 'pokój' },
-  { id: 24, image: galleryPicture21, alt: 'łóżko' },
-  { id: 25, image: galleryPicture22, alt: 'widok z balkonu' },
-  { id: 26, image: galleryPicture23, alt: 'łazienka' },
-  { id: 27, image: galleryPicture24, alt: 'łóżko' },
-  { id: 28, image: galleryPicture25, alt: 'łóżko' },
-  { id: 29, image: galleryPicture26, alt: 'pokój' },
-  { id: 30, image: galleryPicture27, alt: 'żagle' },
+  {
+    id: 1,
+    image:
+      'https://lh3.googleusercontent.com/MNVLyA7fC0o1RsJ4wYmqmHG4EXWp7E3I15k7V10GblJRr5Zd4ViPr9_cUV1syVIcRqv8Pj6XtBVoytfnI7QXVRGup9R8kxkM26GuPzlmWG9ex_mIWJth6J-DqYDfX8W045y2p9S--4dFVnRW0YrSCxhVwLYfgJsNCe54WE24gTKeDlGGKVLpv9DnNXCjD4ZI5DRoyMQACqNyGy79vEbr5bcyPPSV9XaHO-UVLT208dW_XndL70W-1rk5raWwY3degwH0pGZPxiABaf2otM3zPCbrkUEtQVv3hf-Kv5VORAMClfJh-WwD9Ck1IgcgDaDAi5VkM06pkreOtZmKy937uphxRkqL_GpItlvFFzR92ZLec47L_aoHrl87jaHWBuqM5k9dUpW90B1HWIz_yCrDcXXJItD7vVpbJo6kjO0mHm8voggA707zVh4krfJHvnRrtQejSog7bdySyIgViyqPd5afSwA82Nia3k6VExxKYH45HY6ZqfbzhK_PF5aCUhqzzrk8sKarodxcgM8STH8QcXVVIbDGzMovdtZUhKdjJQ8cNxe2EQF50OtodnmBDhMGo0TWSlXR6KamJJOrfovCvJpXZBFmhvBBwTvlGe2xFLWBiYCHtlJFgx4bCEQISabvHe4x34srzyPSRP6G7lA0K5BkY29V8EZdaSANSE6TT5LRqnVP87YT_UWLRu181mqqx2iTiGRBu0z4f9Oy=w1346-h757-no?authuser=0',
+    alt: 'widok z balkonu',
+  },
+  {
+    id: 2,
+    image:
+      'https://lh3.googleusercontent.com/gncBmbxGI6d5zkVWT99f4fYsJpN2AzTzlbObEiB7BRrQsammJJB_aYz8AMXDK9AIIe6JCCN32JJoBzVPs2UIo8LSJjngzRsQoHcX-BVmrSeDq2t2BgSyOiwD2GcrGvEU2JvYTVNl9gw2VohJd82KUQx9Ot7K1P5nJMZaScyWS89D2AQN3Pk_Ql4dpVE1IyHyfzX-eCzOf46x_o93nm2AVXCC_vANqIV97ghVtlquxUR5vgBLQBOeysKbSk6Q-UNNO8IYtR-h-VJQzlQyHSQG1lvmMVmNErnl3Crgnec_ab_tk4F9nKnjr3nGU_SRYg3M2YgMTCV-GfvhUBx_bQRbpOTyrzAouioQy1eC46EgGfLbE9a3SVDTKAFZ7gESyWAtlmdSi6Y6ZlRx3aI2yxxn_6c4i_UYTmm9ObVTF6L7po8LjckWrRNeLFmXLVQXdm0zoivFiqU5joEstaSrQuqy3PvkdPf5tdieoeUEu7G0uWwcyj72vCXNIV-2ItivlqvKvmodv1Uk9Xqf8fFCgc0-KnQNzK_hgvRmQEp5Pu6pLjKWfzi5rltAL0f5Er_OZgIYwbaR_TRkLsTLzeHhLaoQpNpceraqfZuvXHmI_K6hmKVEoZXUxt8p7rav1pf0nIKl74t6l0KHHTTBx-pZuzVwXXSEv-yKtBdYi0A5PwIGrNL_65z1MKm8UYNnNWaA4JNxpUwZ9h1lZrb3_5pq=w1347-h757-no?authuser=0',
+    alt: 'widok hotelu z daleka',
+  },
+  {
+    id: 3,
+    image:
+      'https://lh3.googleusercontent.com/ewlpsW3JJJzqEaDF8DRCubZmFnvgFNdvW5ts5xgrZ6IAy38MzH5jyNqDmbXnB1ShMLW9hq0ha46PaIY8d1GdwXhGcPYkSMb_zl5nvPMCWFWI8HI9P8cuFuYXxn7FN_DCmG3Jb0EPO5nkSyQ_T3gaUBYNQU2RarNHb0XymcCQrX5xmqTi0Ye88UQyYRBH8GTPZgf4tcxSXj5Md7U1LbElNToCFLC9jAv9xKa8to1iH0zWbLbemgvrj-BiSGyjVD1V35Q61KYb28NxkeKP5aMgA2OJU-jXfYRa2bS2DY307x0be72NE0OqXeDn2GgDbY-uezNq_TbNjdKvYspffHl0G9OvQy_B0SE3a9qHbL4EF0j509JOlsc06L3tddxHM1w2pdx4wNjk5huc7SiH1glhvk8tGPWINivOyO30kPebrlqNdCcUa-kmVcbR3bqaDdfcOrCZ85oIf0vOld8edQDAPpK_M1EoGxarZogGeSU-SHp8HTp2XF3TXdQdLaVIK0o0sizDSZ1Gi42OYFxa9UhemojynCFkjpZM-BGaN3wfIbC6p_zQRk3nRdcybsbGA-S7u-tUQGSlnCG5ohD8LQbrLXELQ2d6lLZyoK-55tHIVaNVaT8RnT433DSfqA9FtKZT5ZnOMu_5DWo8yahkKUTGTcij_dRpVZqaUKtkVxg8CzRwF9wsXc9fb1TYpZLQCocg_5i5uGJbZCYvbiBH=w1346-h757-no?authuser=0',
+    alt: 'ule pszczele',
+  },
+  {
+    id: 4,
+    image:
+      'https://lh3.googleusercontent.com/z3CGSe9JmJoDSxbJuEQtkFJlp5LOj3Hsb__ZOUH79k5AT7yo0jauBy_ocYTVmaxn3nFpLo54vGdgHVA6YyIhLsbXHzaKREOXm-y0ynH6w1B9WV_WR375f-r8LvtaFeFlzaWDP4r4Ykhs4TwlIOR0A2-PyvjgV3DbUURKKwqL9Z7uclfOPZttuDkE20s2Bsi2iP27AVSlulymzMrCHhDk6QLO2eR4-VVHXLmD8rvx9QNxCsRCL5T8xquMq1CMdWYg2xVrC_mxeqj0Ewj6gCqek9MaDKOW7CKWKd79Xn3RNxNxLqijjPvtqRu4y7BUjyO6ythbSQrnmUbMSHm75VjwVuoYC4igcOEfkxrjEQ3DOyKYDitcFrUehOauwXLA513DHDek3UsVycV3Y04PnYPokWCKBBt-DXbWdY_fHjLbFRekuhvSjhjRbTvsjRYd0zXnIDZ_v0n-LuxhvCiHdro-N0LqONo9kYftCmOsFLzXWQXRwteMU3vEkBrQA5hCOZK7mrmLkFJzu8FPEKUbFcQl2gwd3NPj9lVb1Hw2zXUcThdeE6qV0n7nDKTT6-KkJqPIUTT3PKhGqT-UHSF28JpDMNBj5TvMdAXZKk8_FcGYju_CsHNUWT7zT7N6fsd8pRs9A0GZ0N6D81sgiYvt5qW66RmgA5-fXPuzCK7Sep4xctEqvo-MwWNYiOSNYdmf_Z01vIzbYRW19WLyBgLP=w594-h334-no?authuser=0',
+    alt: 'potok Hylaty',
+  },
+  {
+    id: 5,
+    image:
+      'https://lh3.googleusercontent.com/W2ydXt-wckL8x1MNJgLTy22-UkTnJxMNDVo3IDFSKB7gvAwywfwRQhp_Gc3B2QF7C7dQBVzh4LB88cr_0hO8vAwwAzcljbiciKonRq817JAdW2i1o_0X15YjkQBQxFpaM0g8FMRXVtzdLV096tJ9poL4ohVHoYzWGtedFz7Cn5TdEXf5TAvI0X1AB9Bn8khnThBjFQRg75t_JifI9aS_ksjytJ7blETCRnQmo7jgdOMY5D2QxkcR11b06cD9wwonRE0fS2WZ-n6K18ItFcjbsoIOLkLUf0oHCnuHx-Wi8SgCWlnhCX42Fd5dbGnrW4DHuio10KgZzoCQygc5gwOjAWFe63W4VZe1ITVM7deBu2aIT9wtCYbMiprjYvXXdqnHx41KCir2WUOlcpwLGtBMw4qUQQxVvLpigONLYvhIzogsR3k2_GkVYhzCWhjQXKrf2kHuQiCepd9jCaszWTajhJUZZEXR2VdIk3GhTPIQJ3zfeJVh9WV8gML6APer_wrB2hZg0BQmqgn2gltA7tnpq_qdgGHUbvtsTf5Ak-L-DMJQoYoEEu7rAEAkx32jdc7Bav39kyhUm2qu7oJvanga_v6aNiQqy7QFbn4VB_F2ZdzIdT0wA4YvJj4xzwW8lHxxNpJQps650Hxr-jcGHzAPmTIvOM4O1-Boc79aRFhVmDt373J_pqSbENtZ1EoPqMCR7WyDwviTJJAkvbbQ=w543-h360-no?authuser=0',
+    alt: 'połoniny',
+  },
+  {
+    id: 6,
+    image:
+      'https://lh3.googleusercontent.com/t1zaQGZMMbuo5jwsyMRn2em3BYTHvask_iehvZ69s02cUQ1o12kz5l_GHT-RUMotsE0b5WiBG3fI6uHLIfqk7cPNV5VqIktvSTv1-cszBZBnxiZ004nUM6i6mpAM5DNcwqQqoe5iYZPAy-zecXqxvs7kJbktcvU1DwON5ancIP1l9nhM_-SD6tB-6meygBfATUQsmKfKxZsC_36fyQDKdsLqVnrOzokUFu574RR62DT6VTFLB-nNuI4qFjTq0QzEe7NbKk8wgDz1uhfsvAj6SOfD8WNwzFm4469wUxOmuqNomNYJ05xKRQyjMd0cuALPjNdsQzXzMdLAdlVmTfmG4ZRFSdIPTec-v-eGq7_lGV8JMOn6Zk_qOFlkSGxtzhcSdadP1Kcx3H9OMMnF6RkUVEVDQ7BQymAFBUC5tHro1Nn4oseD-Jg2yWHKv-gC3hph5S1I1_MjOmYbVnd4GjgrLvn_Z84xPqhzJdpEs_obg177chpTQaj95Dl8W8Qtlp-TISyz09IHaUT2QyVQynOMzl1yn4_xnrZHSo6lVAQJxar8vLqGfrmCYjRIY3y_7hiRJ3TC635O85MQRlTi2C7XNMQJVgd0W6afGUjUZgVCzShkJvgqUQlvNdc202BQebR2EC-EpIL-JbgUJkDznHl8s0e22diciATrH9sqT21lnlhPCJZ7NxswcCOXe4syO8Q0a9EdYXTHOM1RMKIK=w426-h757-no?authuser=0',
+    alt: 'widok z okna',
+  },
+  {
+    id: 7,
+    image:
+      'https://lh3.googleusercontent.com/zFbYXyzIAJQdkPdA6KMkAsxMoPwJmuN7XFIJwZBdwenhELtQygMALUVA3R_ooFYRwwQhEUTOnvQbI39JSdqJoG3vthiH21o_ALhdmHxxJJ2hLpDS68CQ3VMVfxIPzGD0cITFjvMsA6750BbpIxXLMymvt7Kb0UBWWijVFsPTTV1fckr76CbabLd-r-5XshrvYbLJW8kiRXQRcN8swl58MHIAiq_q42uucyQWJV8SKSaegiui5VWTGS68P7tEztIkxO2hlZilwK-WBBmZpf8ai-CoNu3R2-1wZDbtXjoOLpaKpj8ICt2plV57eVvMNNN_4P4RvIulXr30YBH0UVjc2T4mPaB_UtsWjG1kjKu0Dr_zTmqCr-hsIScBWMoo0V4suIj6i1r7fhvZR05TJuP4TKrOLbhM2S-ILKa9goJ-ekSbzi6KkvwCkjlHvBn-7WzVMqHzgdjPpXipULi9EWdq0rCw5mb6o245j0UZPv4v1GuZ5GtBhzzs2_ZsPfLA4bwpzaw-Z_UfZ9gyXBGqMJasEVCmhhpnsXO3jxfTAkWrN5IcO_ovcFSgeG-euFljtBT08AZn-clRkHfndWGrnvAYN39yZoM7oIrCzlXSTS2PNG-5iuGSyvx2rvhgj8zePx1Rq7wQ21lCHf3C3rZ7eHf0dq-EjqVgBzeV1JWY89eUiccgCl2H7m1Pf5uUGXXcEzMhcq93_NsZa9P45tFE=w1346-h757-no?authuser=0',
+    alt: 'jezioro Solińskie',
+  },
+  {
+    id: 8,
+    image:
+      'https://lh3.googleusercontent.com/Z7sHIfG-BtABvcf9IQ0Hwi7gElWYXGU58swsa4Fw6VcDA3tLhZDG9MTYDl3sh3UO9EENtpEPhPcBi9zRh4LsufG6W0pZKpd34oS8wbBXxVASapQdrVsS7PjI3hTRR9p8rjeUvdH9PcMWWJbX88vmA1VZg-wWwQt6LO6qoIVdOZM-ZUIa-jV8l1GdVuQlAQ9n7KrzG0hYQwtWtOcsAT59AZtLUQhkTRw7YSsF0lGUldKk4FV2c6tRfVwnd5dxVMYPjnqFA4iAKcy-9KOWLDdyjiReaQ7upq3zXzXXYbJH6Ftw4rYC0XvoPXgUHLNJEk3OF0M7kqPOv0S80jEEGPxV8GaCfhiDm9kT1h-G2wMHUKgsjUfpPx92KEAgv3guN6F6kubIFFketSV4SFLLJFY3kUcphnV65QHCdbPJF-fo9aRxNq3T8k2rBBIJOfkK4XNQjqOB5GskUNmGsvgcunKuaYgXahyCScyfZFlO1aSIkUGO3DinR1fxwnGIKWRGLGPRsZYqJCjyVK31DrMQN3iQWIWR_-GHyO84T3EL6sOGGYy8rV0A5ZBQZgB431dpUDOJwM2pqi9DSVVzGoxHG5mxXEt33XWOpsaJHX6QjpDCkchl-fJ0LPLSmY_j49NXJVYgWejg6KUsVTqfN_wOqH27y528WBMbpe6FQiTwAwaLgM5J_5XkP9bni9dt_OKdw6vum_2duPq-jMD5rhFm=w1347-h757-no?authuser=0',
+    alt: 'ule pszczele',
+  },
+  {
+    id: 9,
+    image:
+      'https://lh3.googleusercontent.com/P70rGT0Ffc61jSKWc6XDrTK6MtBcwBLcQIgRiviibe9bcQwAAnRCa-Z8BB8pAH7y_Nrqzzol7D9dlOYRIs5nObzbdU7MMu5osHh8COpoW8XUc74u1cApxxkMMjPautaN9kFuc0P5R8EjSjz5ln617hDGh4QR7IylvPwBXK6fldlRpXLa-uGQisr3bEDF8_x8b7qm0M3ZtFoZuDREZTikhvJk8DqKqaEMHDZxMu0-F7gsHfj_e3kFiKt1F-28DHvLN4_MaLTADs-GsLECh4szQAr_MfKH_KuV6ZHc4bsVSraha5_KXqqSk-JjMBwCLypr5ySx2CXaCn5hJDyAcBIur3rJODa2iwATSbw36QR0Yo98imneS4Emyo1TxBv0Yb01LLe1pvtxmZ-ToI5wG83gj330Zv_3zLPEYedFjH1S6xKInJTVb46EcMTYKaakqNQOnhjdl6A0WI_qOlnmYY7Y-ip9IuQiQQ-DrmCPXvSlmufX1bKOGHX_e0ojzDiRzQtbb0gq5Z45AOxn3Hjyt8ulT7DTTcDg3Vsu0zuPc8z5JoH9LlWuZM4jUP8vmqZWT1Rw4s0sbVPolfntPWxfJt9a5YaPWd38lb1jrf7oh9FZSrFhcPodqyM_4h_Pbv0bUG-oyaLB7E3bLLkY42K7RRxVrzFzv2xiMcL2F4zw2x4cnc93fghLoTafiJotkEa02qRP-UpeO1Ek_Q2gqT-t=w1346-h757-no?authuser=0',
+    alt: 'hotel z podwórkiem',
+  },
+  {
+    id: 10,
+    image:
+      'https://lh3.googleusercontent.com/csqvhPSj02oLqB0TmU-mWFC36q3D6AVXtZP01Lo6FsZv7LleNLq7iGxvSPR_Bba_kTTKQkDGb5jcRqY21eQgopYgpuh5SdyYDW_0PJcJNzoWt5aVIYbLIacuQhl6lvUJohhEHEAo9bRbYn08OE52foRCPNnlSY7Kn5RuikjYxw6FpQkKzuMldQV2CpLHzztzsKbLP2NPbrDQdXYoJ3Sb-YUcMQrEMjcJoHU5xEj4yBzWmKxwqk56uPrJ93IVDdJoPpnBtLif0BFt29e7RLEmxFNf8T2dWyE5Tl4TV6CZ6RGaWp-CGLUb52iNQxmM-wXhKK0E9JgleG_LGsYGyWSA-wGh5jQa5UcdOV1GbolvfpPpKd8A88qtZyc2U35hdsuZPw-RKZ7W9ZGwot4qKBNNc5BUX0mRp74h1DV3nRac9rzldQ9MTQjcO1ddxncs6vupoV9bBkuw5iNvqrWCADy-UMf4QbrYyqGYGDdNb3gbdIXKopbkhIgSsx50e4Jo1iC3FbG4as6ASieO2KGi_5IDmrRkVhTeIOGLBD2NU8OePfjO4civrOV6vhfF_pl-wlvZYMAXya1egBTlX5OpQJrUHkjfMD0t_KK2AsDkKKexBaWAgVE51-FEMerfCF3pvwkg8ZDRejyoOMbhir92MpSywUOGLQ03ar5_l2W_MvsmwE6l4fjUFZeF18XfH0zqZG5MQzXZGwxc75x6MCBB=w426-h757-no?authuser=0',
+    alt: 'korytarz w hotelu',
+  },
+  {
+    id: 11,
+    image:
+      'https://lh3.googleusercontent.com/2eamWoP4A4WEk--taagSKnRkZynIKVEFP2qI297o7Glg4AlHOOmS6988gLpKm9dBla197InEDW0UyIDj-xr0cckusBtayvT3zRuo-OJCCBW4ZXHJAmH5q422ta2XoynRdCiH68CfqQW1zkJLjz_-gGkRw_BIez2NIeJYKldYtQ01b0f12NaRDN9X1ia16aY19L3hgwkYjbVKgRQhBELh1osuUV6-KQxZNl4SZJ9xJSgzxyPTE8HDdbXsCZ08G8mYJoK1EQy1QIIxx_7QBgY6yW2tO-uqVHGqngnMOCa1xX1lgoRRGwp-HMk5dtxu8j4cSoAzeO7sgmIXqSugBe7BN4667JTlksjdw3wHMWa8QiZpBxOogRSiFxNe-k4BDExAO4eHeMGoH1Vv_Hhomfbq0YXpwGZOhVPbLkJ-ZElTQLYPLe1zOL5H3-oW388vXrr6PlsuY1dETFz-pFbv0r6fcbrcU1WtO_HR3U8YJs5yEZo_N896QG1RMFHhQvghs4q1CZ17B1BynxZcb2Elpz7SXv3EyHflt18Il7sb4-Yy2xpTsOsrHC8CM099EfiRNcYOqGsA4XYHVs_rGuTWSd_7IDPGQlkF93-OK12GO7E9RjjjdV_sP32yY3u2Pa6A_1A2YWlEgWNjVgm5FZG0U_b8uJZJ8SRU8X2ydNQQmEIdfuby_ngSNwkuVEgKdrJWan2LyueRsph45bsqGrOG=w1346-h757-no?authuser=0',
+    alt: 'podwórko',
+  },
+  {
+    id: 12,
+    image:
+      'https://lh3.googleusercontent.com/pN1jKlyDbzHRhWOfiOqXST0YvI2Mgrpx3_mMM29H8im5OPcoi7tc2hW2pl0Pq9WVhYiWV4iVXdcygWXcn5A4RVmi7rnm2khirmw2e9oMD3X9uIwPKPxma3ooDpqZnm3Uf5rJfZNitDrVtQbO2osw06ViU41ibk55kQUpOSH4zmVRxka9fATbIVyBPS7ioAvbTwzbgBOkQbktxFzDVL74UdEZ7wQyQcz8Y6GMvaxG3M0DDrcNkmSsUQhtFhX4IUg2yaFEooekdzr2cV57FPplDhx2WraNGj-Q8d9ly6kCHkAFpQdLKhDFssffoMInGs18lxt6EvpI8OXClIVkqXYG1ZEtdamX6VG3aawlILAHd-QSYjGkVJm33cyDlc6nSbdjjbRA7kIHYQC2H-FLxsl_I1fW3oXtTSgroM_2hMpvOq7Wnwto9nPwoDG4302p5H1_LiopO44OPyUBYAB85c4UbRELfSOKaMv-db8pdcPePJFpe9NXWOldHMo2uY09WEdAjXxBfNk_h7JB2lTfN3iHnCarCBKkzJTw0XFv5OjqZRbn6bUv0T4YpjejE3XNHPPOf98Nt-jCvhwLQPFYNmH7YdD09sYbZ4OX63YSlzS-K1Y-fl-p-9ohVrz-xfESgkJgiWsFlIleYq_nzdBYbR4Tp8BXjl5i-eIQ-_X56VHVkWXjAbI-FxQyZx2uvxPiQwUeHv5ZRn6rx3NZEKak=w1347-h757-no?authuser=0',
+    alt: 'sad',
+  },
+  {
+    id: 13,
+    image:
+      'https://lh3.googleusercontent.com/j5C7nZOkpr83xuo9S4borvqsqR9tAVflan1gwKUCc8elmzz8QsYTOEParwdiQ87VJrtdAGXvi3duM18FF3GrsAT4RnELm9h9JVbDZJuHR8Ag7u4ws7FVmm_eydw8CBBx9aDsPldb5dZJsoNWsdNA1sjycfVOX_IP8spS9FqtuwBK1WXNQ5qbTBRJXlgmnHqju4lW2nOxD5v7RLqNpWqnw6l7Mphg0-0w8GAbTTy2IN_jsX-F5ImNQOPPVqT0GicYGwZkbmz8CDhZUVUypOXs3uzZb4qZEistux0tnIs4TrfW16H6nw4wujl_RzGNrJuyjuhTjmvwC_DDgPA1kawgheVccWVeu8ZuJ-DXctB9Xr-6JO4AGitlKDqh7XCarOazaLVmZGrOXqgiTrqBzTbwMxh1KRwCSswJ3BEsZMTKAoqd0f9xFxsHyjgJRRX9KVQ-SYhXLpL91CGpiwMRZVe4Jj8t-q5BvfcGemVao-OEXnhWs0k5-ExDpBgqsG_mKdY81WxJ-qatqelHCERZ3v_7pZhKJa32QIBhTgfKaeJBWq6mfXgb9DsRjDNcvYl-NdyeWQTCzk3ouU0FnOaAb7b795gtgT5SekqVS0OKfNLcQxi1VxSXFzLU7i2h8otvcckThZcG_9Y5Z4fTOO-rKJxGc0t95apzlM7PTDCKFkISf_MReghiVjnsA-X4qQmyr-IJ4N5GX7bsPbya6942=w1346-h757-no?authuser=0',
+    alt: 'panorama',
+  },
+  {
+    id: 14,
+    image:
+      'https://lh3.googleusercontent.com/c_lCwEHMRJktqGQJtR5NRTksE8boXwJBvj7DWhnRdsxh0hv3zK37Az-EW_eOkzLidJaucjFPw-y5jjm4sQwU43GxQShDZfWV9Ma0f5yGxJQz3f6EsC5MI2ibEtluvSaNq47Qd1QjmAaSXDAxjKjjWCN5SG6XBhDIGjeI9eR0hnMcA5_0SqB_ALHAiJJs85k9N4ygGNeaM8-TpGhjPlEUC3rEl74b8AXUI3KUnsDZHo08-XOXlK4WyCxwYIhgA_j55ZoBl5gbNwHGAGVMrTsT1Q-bBbyGfpsvPQIwts2IOfRs3MvLCjph0M8VFYJnaLj1czjrSvit-9Ky227UCp0foHnmX94Xa1LrICdVus9-ePx8LKDs9-GHL6FI9WmGSPYpkgWYZwp3C3jN_ZPUPSnLS-EOcnbTRh-bP_9ope9xttoORmKtylkCBJA_kgfZ1PoxJqHW09bW8ZO_e2cGvT6MOSDfv0MMwB51o2XZAcn3hVfCCpiDYTAipiq2wg7aty-dBa5G5YvoFq67pxpfwMB0L8VPEuOdIJFG00o-lLjqVdVdSYyUSarVHHQVOUg7c4TPg0oWNez6THfI7Y_D9AXxPLKDU_1-anIlW96hcr1k1HlmJeBgBDzh9DD-A4vIf9567-bqs7li_YKsVYYLmN8fGjspmQ0F9QuPNZV6qRfnDKZIjtB1ISvNyWueA46i0Lieb4XTTXFznSjdqDoU=w1346-h757-no?authuser=0',
+    alt: 'góry',
+  },
+  {
+    id: 15,
+    image:
+      'https://lh3.googleusercontent.com/ZyIfX13fM-BvQzyxRXLHnJg-MpK1_8p3u0Gz0A9F5WPxujCja65ES_V6sToo8RS4ynWm4SH8-ZWtsGuQaoGDbAmeV_iWlFH5gBcolQ4iblzgWnQapj1d8ZD1SNupaljhhHlyQ_XY1VqXBsjSLyjN7CRQd7eEVyc0asdl-kR2zmC437MgUXFYu3xZ-3wSw_0mjpkoDCdwvWjSHsQHRAedQqsfMtLAicL9ywBhUSCf9j_EqixjrLE0exhEbiFG8fiMW7A0Oyhs1VIA5OqiiiWPvIT48y9KKdgtxgV6tLZ4lgEMcI3b5jnfCOQnelQ57NPIVdvSI0h8wd7lZCQH48T-jZuNetn4LudtmDu6RAsYE8go2hpYz2XR4iwKkJ2jRCdoW5Jqqj7tOXzVU5ZikLZhyY6x5UhUowLzeRdJRJj6AlydFhL5QG-JfHY0fVLdcU9kkEr18NgX2ovoKd5I94PSe1a8VAzs1RJ9-XAfiNGkupJ-NiFOOwaxhB4ivEjO34L59QW9BO6bkZS8en7Oup7y0DC5YDdYUezgfZEzAGxuBQ29wULKEfFbntIaW9wLdqL0QPHdBnBdDhCEUthNrGKZZXQc8qEpzCuPi7K7FQwVBF60zsaNJcxehhl04ZojsEPSJ2J29eI7euFkZqC0KWTD2iL0adFUGUSiT7Kwi1MJO6JyEEvbT6QCKDTa013Kw0E8gvDUAVG6o6oCux6Y=w1346-h757-no?authuser=0',
+    alt: 'miodowa polana',
+  },
+  {
+    id: 16,
+    image:
+      'https://lh3.googleusercontent.com/4eZNs3HKReEfkDp0TNmOO1NA1H-6Tq4Po0jeViW0i0uCiLN9HUpNCsCN-PD2cJEWFtp1qfxXONGV7IwU1Yu-smZmNiXNy5UOX1os-OAtYSCLS_DrRG8g23IKo0IagJ0Wp_QQD4Js5WjrBJJZiGNPVB3zko5TeKCTuI16-gEnsiG9kLa7gK9wQr2LzB1gkJ5sdjt-5WL_FA1EI7unrwSJsUwAB_4XvjoZzVpUxHnHePKgmlIJOapaUMYuy0YfLmFHFVuFg8VYXDDOBifbeNaLWv5Gwzr-10FsMXgGfgzirQHAGx07LXmaKbD9D-0zotuLuKMJTymH1vgFyWO_3Yz8hLk-znkUR40qNyUys4rRoTe5couGcmSQCky_0f0nQ9C0lJAvEcMk2_PaxZH_zhS6YxBL42s9jqIb52KLN-wqWlS-x0hGq8D-GYifGD2jmQasz5bNh5GzlZWnxWqNmIpr75F1uArkR83rLfhdqTtpp40EgySLK3Hxaw7aPJWXiAHEsoamk1yJEFWVfrhhKg414jht_zgSqeUm_teSxJuz2R9X7BrI3HRVw4K0v6a24SaThPTZujIAFWRmEB6Z9EndI2eFYJsGiJ7g38AnP6zjoujwbocbRjIjKtIGo0XCwjzJTGrc6xJZpOlucawXHUqnfi1t1Rzr3BruSS5T5jHt9FlRKboG7JWA3X9eLmtwHrWoI4tna6-npyb_IXTd=w1346-h757-no?authuser=0',
+    alt: 'widok na podwórko',
+  },
+  {
+    id: 17,
+    image:
+      'https://lh3.googleusercontent.com/0adeiu2L0HAruLbcZaHZHnO2dZLjmzPNgc31LJte7Js0f3-y_CFXffiHy8O9y82VeBPZ2fX0D0WhuIS6FS2W3BWJAYqzgCefLXWNYA-fQH3D28N07Jz04Q1Wzisa_rKCS9dLhzeXaLFZSV6bIwSrnxOnPXgUC2v_dp02Ibg7zLMWwWgBqJX3NWV_okGLPrMJHdd63q5IOH6tp2F9qrjzN_Nj1UsvhKeOzXLZ_ov8o8JuQYajNyRzyGUHa09cKubFV3gVYM_0V91Mo4yYlWcUuy5jgVh_ZHMzqdCzva8DX5WmG2UNeMFpinGfRykMgRl3RkQbEWXGDj4M87tMsdSrEIqH_5nSs9wL2xo8gDZCHkIVG_0V738DYuiA9eP0CU7vEiELUOpwtM3NIcwfUsPIU78JLc-5QHiVr03L6yaXUPoNqEl_P8BJ_5jcUg1SLbDEHOlJtpY90f0j_wrBx2cH4mApjNcCQ7wxMh3pYnbj2pmQDIMXk6jrkBaQp5KJQZxAAzEmUiNl0TIUgvYEYZD4PjUzKIhS6n3lYn-6Z7o4qtbs_Cw42iQuieGYTZVzSKchCLMwMAz_5qocMkymnQwWH-yozWFSPZKhpO74EO3cX3SeGrVhSodUE5Obs-I1JZGNv_faWI5wQgjU50-tlelO37mLzkNBsJunhJr5er8IjHnSzsX-sV9RpnLqePW1L7XnB_PJNc8TCYRQFpvJ=w1346-h757-no?authuser=0',
+    alt: 'polana',
+  },
+  {
+    id: 18,
+    image:
+      'https://lh3.googleusercontent.com/CjRshR1_-_wAZcC9YrEd482VUcR5sgSYyxGtQtt26lvJbjdg7MDgIPLXvcASFqlSDpOxR8wTCTSjC1_TByQdgBQ6ea2MDkZ_WLiIBFU5V6lh26Z4EfkRmoJFMLbXxJWWU6zHs_hpL1zMvG15Qh76LCHTagQk2jXKC4e_IJOuUm7OWb3PS8Dbtdtkp-YH8YexJ7pIyIqc7T36ZxvujXKdLBQ2axvM1ihQUr6RqxTow_EoIcpduZXsLcpMjJAgfOd9thspbuf26A-OUVylvyfIDVDBvDI2uB4AvShKIGnp8Lq58FUzmTx8h2sPpWejIn5PGaoc191xDkhCxHAu3yvWHtsLabplzbFJDDrxJzaObTceoUZMzPdO5uEIb8SL-rG6aH8AEoHw5XESGunls8JLDUS4L2a3uxX_JQOZmoGLvhTsktIwcVE_lGy5wgy4RqAjoks4S0jNC01_4OzkziPeeyA0cwWYVSU8m0cjF8XKSLiNWiDm36yqAhS3QygOYpmtaNlKgMT5PhhxI1LmJ4pVo4DEtwLdSCfFBZJMzjlP_8luqRse58k4dIxqEKi-7IDqZDS_vvrD3AdP57MUYEmA5_nbd4D53bJJx4-IBN8YwYfw8QuG5U0QNnEeg2wSdbnTXHdfI23ZvwYSP7zCZaoPJxQifi7mz_SaoQvQhI-NJEXUFYGI7jWb6fXjBF3qsLa3mAIm4jl4s3vFzMd_=w1346-h757-no?authuser=0',
+    alt: 'widok z balkonu',
+  },
+  {
+    id: 19,
+    image:
+      'https://lh3.googleusercontent.com/-5mk_pn5tRYz7IvpMY6Lez0b299lSCRHQPwHjNGPtt9g3-uHPDbwoKs8ZYmu0B2l1pkSrOxxPJ7rYoM40xRd3MPs9vJLsvHJMVQhXlrq679OBYje_BYCPlefR0ZXbtyOXwdZUWpUIdL57hnS3LU0uPmzBfors5qkat-h58RM-M0ieiwNyJ0-BNvuUNxiM2xfyVRSFdOo63obXdRlvirvnGON9Taudfi64MW0xGI00gc5LLyptZBFyXWqPtnM1qIKO_eZEMfFQiw7Z6fLinc9lBwdeKhbYvkNnZpIhEacRDOI8IFuEti7qcTDkStNWOJOtY-LJiZsUDvTpN69Kunj2rEd7MIbJobazh5vIZ0-cbZEDjeL9NO48dL-oaftZjif0kNaSEjqZcCsn8TFPbfczBrrQGIp67TE1QFPi6NiXaV5ivHWefpWiaFlqv5nPizM2rzY-9gTJHiCBN1bBMSFIDEtvQkCA6uIqjX0hHCwf9KpTXZeGLfc7hM6ixG8RVZibR2DFfoAPv882ZKocy7vsUU8x7jNCxhG61hswY3tlg-VWOUS2bfnM7dunD_8VEcEYC4VbZ6mxasRgDLGTyfFMj-wi9uSqKNiWbHj_Y66uzOiH92gHBQ6ge4bg2dUqEIF9P2tfKTyu9Z57l92I8GNA7IWcWvfTn97bbKOwWoRDRL9erVbnOdQC-TgDGykAgP1NCDwOADa17NJJiLc=w568-h757-no?authuser=0',
+    alt: 'pokój',
+  },
+  {
+    id: 20,
+    image:
+      'https://lh3.googleusercontent.com/o7Ipn3bUuV4cm4gcfprGf_9-2rmYm4-EghvY0rLvu2fO2sXZXehBOG6tt-2B6t2ii57ZBgOxHoFt7ew-PN3WK3sLrTPotKHHyCYLKpWhZMnZRqYryAmHCizOT9behgLq-w4Aqc3n-3YnAuG3aFaj9W_0fU6L-LU01toGQb5lxwgWcyFposxkaufzPOVZ4QQcbpz0BxTsDnbudTfh-d4P_hazv9rbVdmi2x3Isn7pK4zorSgt1d482DrlfBbkZR9W3bN6eJBzilO12f9nGiLlac7m1PHQ51G8sdSbF4CH2g7PE2ksQosSJ8j1mCYQ6S9B6Qi1tEISJdUqoX9ug2ymtLTbJ6V0igEonu6ow-pzm0EsWThRfIC4VpuRH14DNs0Rh_0DIbzWFY350gRNzXm5wC2NKONss_1tzDbB8bfeVFuajI1kmxAxZZwN5e7otfC7zBQU0t9kqjdK3hBSibnmQ8Gxotnt_ULnSC2TPlOB4f4w0wCXB-y4VPxOpQS5D3baDchtkhebqb0CoK0J_9JsGEZjoa5bMw33_cKAijCbw7QT55di37E0PJn0IwL-9B7E6e_StDZOjmJ2mswYgz2l5WVDwGYhjPHGulLa3v5xEXd_-wNVGprLHddO8Punis4qiOVoJnmGtBC5srUYMmR2PbuQkG79Dx2BTUNOyEnMohY-8zUjPTOGop5GRy6QcWBUXmgCOBMUzBOl7eaa=w1010-h757-no?authuser=0',
+    alt: 'kuchnia',
+  },
+  {
+    id: 21,
+    image:
+      'https://lh3.googleusercontent.com/xywzY2ca-cfFsS5buCFnECxAQfP-8PQBLASdRj7ivww2pLIRGorgucOagrvH0qW5W9iqbENBS0mDUaXt_yoBEpkb5Hz8JJ_qs1z3YCC3v9IRHla3B61f1pDAcyiSGXYHqgFxBxVIycQmA4CqGmUq-sSxZKXVcCtqN9zTFfpkVkM0orW6qbGtYmmaSc6Q93zj39Bt464B7LY2Eo1Dp4IT_WODJYv6AkxLYlzaVErLOuuNPXIUezvsyj3UvrIVsrP5RYQzLTsn1xbPaQFiiBvBO0gQ57QIIZJY2LkklfDRrAh8_eYSF6tCGRdG3rwYSwGHznXyvxWSjHqY6u5UwC2GBPyHWy9wEy_w9R4pIeluJYTSlfkM91hMZ0hB8_SCfsmouZZzvAAp68zCdXPJQYqTY52XOOB5phfvgiITUb7oq-UR0bzcOeKLu8TscA21MZGEcMdrqopHu_Rk5JPXfteo7qV_sQoZcRObxTGI9_cf1CiesI0GcoAs5_witziwarzRMBsU0bdFSWGmBl6PY_JmhK9MZjLOm52NHeF1JEEwQWG70qrh-p4MNMLbZDGlQNwGGX8IBRtQ6HbKC388bReFIbdxD8CzGag8XJP17GznKxH2oHnPAu6nfK9o-i3sO6KQmYlRr2CL9ilvDOXu0UEYZRJ3wpqhY_azqYh5lksSmT35blbU5s4G-Wtcj2RI2PTyKf79erbv53vhkFh0=w568-h757-no?authuser=0',
+    alt: 'kuchnia 2',
+  },
+  {
+    id: 22,
+    image:
+      'https://lh3.googleusercontent.com/Sa-TmdVU9_l89WyG-Xe0wMOtSr6_Smgx-U3V8hhXZ5WrlFFDbLpFBfj41f1n3r57Q1770-u16NpNA11eWQqS3dhj2w-W99gDBhkXH3K9ABZQ5r4LCY174yiQLNGCQs0ukP4f8kjb0PoPZ5Zy3-5TsykZBiryBBy1-2Drh9GojsvV1RftMUWS95dCPaV7-LVxeSI1l1NIDFebbBiQjTIlqzSJDxLBTPfk63fOxn17g8JJuHwRVNm8kF7sAqQdBKxUxY5lvxDYgXeJbQOZxggtInePxT-x8u8GLbIedj5aSzojNK759zAO_0IT0ZFl7kLAGS2Xh6-IB3nLlPeSPUok7jwRFdx0bozdXl7Fqoc0G4c4HrSJpaBsHBBCHEtAThfK3uij22rI6m9LgjcH-npGBu1A1LSVQGFjH9gtX-fqSLdlVJNzGe2SV8S3WaeKN78_jgOaMvdUqKNCq1XiJklccxvBNBnythGkCENscK_gkzhQVVG30k9oTdtoER9-US3Ca6CIqKf6VOKiCgq-opORorfPAVPY3khsXRKqn3H1JOi1UmvrfhIG9QrYh1Dd-Tlzem_QLeUdEW12-uEl4yXMXdN6f2wSElxBasl31DMwFOuRH_EsHuf1y4rM46xBAtAoAbWgUcsHiMgakm4lxXcCvmVA-ZGTHVe5xIyg1bm8j3GPUmJ7_IVow5YzjUxjIs0FjLVNlMk0rSoYroGD=w568-h757-no?authuser=0',
+    alt: 'kuchnia 3',
+  },
+  {
+    id: 23,
+    image:
+      'https://lh3.googleusercontent.com/V6dTW6SLiD2xt2Njn_mHpnIsYMiLd3IvCw7mEnRcTakE0TPgUmdbvMWXrp_FUIHIZN1XVdC0nNgxUEbfdagmEyBpWRtuwezKA8oOZ1px3_rhn0_y7mBQd-Oiw-geRpUSF-G3NQ3Haxf5LwSbTgcaWhaOwlFYsEn_ltqxCpO31gyH2DNa3CAj_5xqmyCoBW6PRqUZ-ONWwEiIVsvON7Su9HbBCxidrj3md-Tz3ljcnSKhgczWPHeWr9HE0SWlxxT7DeedGN0OKiW_7fazQzi-AieefSkj7yQzzM6fhuPsyxvSnoKY_N8-2r1GqPDwAuwtrObOUOcZlqfyK9bMIeq-WAfK-MxwZq72oU31h5ryPGAtHUkgvZp-8QC1S7mWUmXSwftWo5HSjdMXksK2m_3WB3R6qXyP_stKqom8T70afr9dEZ9WK0KPIZW8uUk1ll7lecSpbdRkvClmkYsxDVYL1irs9fomo9RYVDlVP61kl1IRqN8XQgdlbhn0rXiV7E4FEZZkMCweBai44HZGCHZQ03VX9Azr1OKqXs_g5HFPihMRraHkM3tmUAH-R-HZMmzgbFkQDIflAygnj6mi89E5ZSJ3vLfRBbrG_uaFa6NZIZJjx4w6mhcWD4xaF0aeEtC0Ry85zLa1ZckLwr_CEPhZ0o4vi6zt-vR_jDcOw0gFWqvxTIfVNOl9dFrUqTDmJedvzB-4Ld9XSUV66LJV=w568-h757-no?authuser=0',
+    alt: 'kuchnia 4',
+  },
+  {
+    id: 24,
+    image:
+      'https://lh3.googleusercontent.com/KtGqA4I_ABmX3ZXdX4WiDGFwIhZQ4JvJeG2H3TyP7d1taa-n0rhbUcX2Bg09-RzXNm8OEPt6q6JVE6us52ceO8poEaGNXWgarnBV_xdv9OkzdHTI7SFGJksNoTZNBeYqc0kLkA3P1q_84U6DiUOr7hNOf2Oj7Twhwx0JGzzOCUZ01FNi7gvYrF058MnWkZ7Cyw5900eSmb5zneiCOtYG2oX_h3drhiGFHSDP95qb6hZ4sjaex46cesPui5eL1kTgp_Ph7yiLNr1MpaaMauZO94Crgo49QyOTVe7BlMd7Ba6R260Zmbm60q23AGCs7hc2uHZNW-HSBRANtVltYvxpQhKSE53JEPQhVm92mII7M1j9f3n6o21-EEG1yopDLq81_9XTXuTlvjL3IhcvPMwx42iE8qUoQmpKjp1zv9qj-gFyhQixD32JAaAn6h6PLsE3VeMaQLIQ3POvFmAYflEdrDiD7lqFmx8LHQcC12m9b8fx2aSkkbjHXNVPQ0kcsVzmB9Qf_Go_X7jSAlMau8uKOgN-0i1AO1hk_IVq9HmYBqC6RKCBPteZni4RBSYsOs9qxTY5t076orq0Gx1tHmrSlwQNAaEQR8SQf-bXrKOO_Afc8lKUT2EZ1T4e3LsAHyIgVPYpm0LIiucQGCAAF8iLXXprez1uouC57w-KuCnk88KE_HtaCnEJsC4HuN3xIcqupgKduy1nONmTXmrP=w1010-h757-no?authuser=0',
+    alt: 'kuchnia 5',
+  },
+  {
+    id: 25,
+    image:
+      'https://lh3.googleusercontent.com/VeFLE2B-XbCMCRGFhBHl5RZKj6PhsVupCfdqEYEbSpvHQFP1dmKW9g5gb_kvWKuZR7RqbvDtekQoRJATHs0tlpzKi1lYX4kMYi4FlYpJ0rGPoPBnSLfR5_3romwwX9PNfr3RaAGURqwsm9J5_b5XuYsyZt5iqW2nZtPSYaLsDI3cOizVx8FbOnte9koLUVwc1tbqPq6R_NtrWbMEy7xr39ZVV6F8AZigWqTH2uOOoU9PVK6OnJf0F8Bv3Dj3AdM1nHi8QxEU5EGWZnTBMjcT8X3yz7II0dJRr6JvxUHGoUCGct-9yL6WFp4TNL2V7t6EVWE4lwO_hS_PWTDLtpVFpqu67n0ajpA8WxfT_Lya4QvxXqB_BfKEWMA1KPBS0fvbv3lRfFgBlvykbtJEI3vjPiBoZ_xO-Ej7IUJhLBQ0zxwHbikTaCiatPXX3TcdJeXvxsEfL8qFt3ln5ZkVCTDjE1Jj2vRBDT8m7MsMtb1GUKzpid9bIq9-vdlIFeiNHmXV1hvec3KJ36L76P2TdsQ2q1_yqxgKkYT3P0AC58pPn3caCFpqu--jlcBu4TvR_zvAZhuxe7q8_WdCrjqsvlYHNatMPoerBQq-UAcFbM8Sc6u029BxJBrT8uwBi1ZS6aN8kvOthWCC-n8FbA390-bj3TJvX6NKt1wPKHxXyio91jVOQfJkzWY6ve6JU6VS1Tvr735FGGBE8JzRwrtN=s757-no?authuser=0',
+    alt: 'pokój',
+  },
+  {
+    id: 26,
+    image:
+      'https://lh3.googleusercontent.com/iqMEd9HzBhLiz-Oy1YiG_4U6Lkk-x2Gp6vZ4OTAzkPa7k8dRmk0GS0Mx2gHePeO3TLKnjUXhAJ9hUtnhU0MkV6TzDcuPuDoCDFz9si1TaYv5Y091D3MFfTYpS1iFpXE6gNOeR7BvgKvM-EKeULy3AxpSxwmaUEmFezZe3kuolFfhSELbyzFkOI5ihDERdSdRJXNPTwkNHfoigCkyrwwR3wK8ONTIAr8RmwuXvbTew1fdg1Aw97xx69cljC19yzDh5CpfQLWzoS94Ic925tKCmQZgekgECXoZGupnpNmWzQp7DxcYltWL00i-GdmZZzbWmHyHkKR55-ZWfrGoVrRBCQCaBOIC0NvEwg0AlYKfKRp_mwe3Sgk5ktXrVJ9QguNL1_j196F6oqks1aaK51sV7XCxnNSE1B202ewD-lW_UdY19_8emJ0jxIzThzzNFYDK9c9zEjm-opAtAhqQklRB_etaGij6y-lKfqb5Js2GCrscZcdFrUnDnx0jQ7DnUlSAnEUQ_zC8GCZLUjxAMHD0OlBEHrmZH1_0rRBmWMyx02niPu1dIbUUN8_dwDYyljI2nJe-trCszFegOIf4pJbYP76V3apKAamMfS6hdq4qwwoftaDxTUXx7JYQ8gS1fezOB4MNQg40c028EoVFXC3hZwQQ2Bj8hA5DcYuRnhP_cFVORm3oGW7TvNEuwikbQGyCCUH9hkT6esdIiZgC=w1010-h757-no?authuser=0',
+    alt: 'łóżko',
+  },
+  {
+    id: 27,
+    image:
+      'https://lh3.googleusercontent.com/UDGfkANKaHeVXITJfIk0uj25CdX2kM8he5yFaSRUlytAYKhRrqfQuSZobx7b4EddK_rSu4Y1Z8zOq-rfCuaV0Uqa0s0hDjBigKp0g_z681NGNolqUQuAOsDPKcT-V0U4gyxW2WH43m1rj-uPJ-RC66b4vboQ8g86RL1pTTOO8AG3NCg1S8h_DCi39n8Lup4DtXRPLlEVS1zqMUZm3a4WXpKPF2rQFYNk3N-GjVm3n-klvHUlfSB1PgUwsrG6Gi1MX8CmTlTWSeNvE1ITMOEQ5be7kALwzDwcwsu4zlG67LfV8z6HXZQ4TBHHXlv2AO5VsEebDY4X6L_jGLy5SRkHC7GlvBWSwNnkM5E5o5z6SeN27IyoVcD7JZ2QL2xo-3WPhbVtD4igPjTgGHBao2qcI9tpiNRk3MpS7rlC5wOPKe30Myljf92xOjUlvY97fejCxnWlwDyr6wmlv5dpshwcs6_na6JdBTBBo1-j-XF-CScV5GpFWFd2jDY5ca1VS_h4-k1SkPHYsce1NbafBT1c_ATp53LfDpSXkMQSQNXV8KPolaLaKjJQR1Jz4RCwI2muD5n3jeWNfCaCwvsZeQyAyxIgbmFWHiz24me-CP7tzyMTCQkdT6O0qJhJAqm6AIGRRcXq_wvImcMF5HyOM7UE-OeePDsI7h9foBtBnwCW4BBzhpmcPByYkjVIepGCye2AZylVUf3Rzup4fW_a=w568-h757-no?authuser=0',
+    alt: 'pokój',
+  },
+  {
+    id: 28,
+    image:
+      'https://lh3.googleusercontent.com/eJoBrs_64eqx2m0Ckh3mFfiZ7Rck__XdxK2QDDMu1bPOEPzO7SFVPRjAM2UleLvbbdutFHBk_Es1wvFiy9KWhYuq6DrQ2gHr6yNdh4Nd6MBPz794bVoWPNNldP7T-mkqmT5H1wAoSBK6FeX3ihS2c--QiSviLP-gVcuJfGA7WqYO28ipLDM4QBAxXSF69l3DjB3crm-QJWWyFh-LXCLKw5BS5aoJ5YiDktgx0FuVDtnAdPg5fylR8D_JG908Z-xGq7ZiMjC8MZMHFNmtwfednfOl4SKm1SFvAVAD84UekPOsLhUI1lpaWBN7zoFF-0sY7c8lW9_sLceG7rxCnWmYAP3XUgL2poEORFdAI56FKXSg2jNUPJCMQaut51d-x-3tBccjaQCkQQlcLvTdR2Mqy_U8oZWQepB0EVNKBoD3FaZvfqySvCqUEyVGyAgokWu4NfUbUjDaNuu3eDa5H7fLKV1mQG2NGFHN0jbWvJGvt9OkwLs275lyivOnZ-pxBOIi_HWPZGmeyLdn3_oA25lEMI_4XaKtz2Z9JFsG5H3mYOkEqX7AbjOlcluNmW9ir_apezbgBP281bQIOW_h8jyb2i3j3qHdcCUctqhvTbtYirJ3hgd6mwcsBnAe8de1mrOSZxM8jJCuqq5DoMaEXHf6-ui2s1OH-cP0n5YsslwOmOr7MNFfIkpMDP79gMuJaX0nCgQGAISB9xWl9X0f=w1010-h757-no?authuser=0',
+    alt: 'łóżko',
+  },
+  {
+    id: 29,
+    image:
+      'https://lh3.googleusercontent.com/aa_3NV54dMine_XdVcmz7ABULhIs9aopHtQwGG6UXzImPSX0FG2_ZQA9iE9qWf_j9uji--fZRnooWdt9bNYvP7mUvgZD2HBgGu5PqMbtsDhGJeVYz20hjwq2wXW1QGSmleZQXsIvD7dcX90pbBHe0JhK8iILE8YScy9Sbb90DC07UFLi0M5nrtKvj42idj7SijsCAsUuIBM0BlF47mIgztNM-SXCJQamtxFKn3Op_QW0OoDqE1aS-tXhoBdSwgLu-YN8Q58rLyCXG64QTfRoKvzZshXe2V9Xsj9sHSyPkWOw6salay2BtjWWXQ9-jgKHnhmm7Llv_gKNyXkPnrtvYDdbvRfWlw-h8UDz_l45_I76sDo_eWLcET23Vdd_x63w-QTQQDJy-FjZIWDdirp9RWcp2KDzP1qpgyZPqawFQHKJx0WROszlwApERVFnUaD25KIiZ2fpOXNqFIOiteW6sntYg6d5ShLt_KS05Am-3_4SbJof2z80POGKFZUf41Rz8c3zcR5Xt3uKbWkN-FvgC0u9K6Srvq0ghfklpf68hT5STMJDXLsSmwPqND5-CGzJUvIgd2I-TWsQ1t2pIidt8ZsnQQVbIVBnt8ldAs7K8InhNELj0YbHDBriUhrvoRy95fSmoqoVTVp_mf9XT46oi2LuYM8aQyR9WU0Xm5Zl4lGXAYwT3nmcdMTR4hGVjP0-fooKiSAECfoBpPZ9=w568-h757-no?authuser=0',
+    alt: 'widok z balkonu',
+  },
+  {
+    id: 30,
+    image:
+      'https://lh3.googleusercontent.com/9tunXTzy-LLeDt1y93AREVaXXCPbVfThgNRqUPgBUsKDlj6QGzWpWGG7TRT0Zp_2FknaZ62F-P5XtORH7Ecz0gFpQxvVhKZ8w2DNYV9LTBXjr0a-E-uBcHhTBN2yaCSjXbTbstmcgNcdWmgvdxRnWtE7AaT_oD_G2qPrS5FzBe9c9PhTzl5Nj1FJ3zcC53cnm1xSN9k2UIK1uq4rksXm24jVng1zh7p8FAXCPK8Eecx1z4lCXFjK1XFn9c_dWrQiH4zipufBTljdQ8DaPNL8I-sns5pkNt4OKsKJ43xX_W-Is_z_KqnizkMlcx02wwUwdNmUz-a8VWRMDFQQUNeEdRQUgaVg1segeC48jGgx-RGmtUiTbfIm75nVPUgEOMH16eE1Vo_xStivZCmVzZd9KXPaeQEHS51rwHH05o9y--gzwgFbmkvxhxMo_Ia94S6iTnpm7-kgM_eS9a0zm741MnvNZ7z31rSP7_1w17VDbZoXRF4e6-CklxLSRcVOVjCpQ9mqjuMf2FIfjGlFYywyYvVV9umoYbEg5ANDB_TSzei9n3PrPJwQ5EeDpccwflOYKpJrrOBW2suTB56i_8THXwQIzcnBzwNTGhisoR3WVogzpLbj4dDE_2pyW-E9hCdExZawLfYtvlmqC6-SxTbqJl4pE20c51_iqE9p8In3Wwa-v00edU2-De3GtM8B4Wog3pW-eHn5eOEOqlc2=w568-h757-no?authuser=0',
+    alt: 'łazienka',
+  },
+  {
+    id: 31,
+    image:
+      'https://lh3.googleusercontent.com/Q3K3YpKzQMr_gTr0s0dVvJAgOTDDHUDX7uRa9kfoSgr9webaTKGvk1fpnDPXKWITItmkgWWoOp87EacVHHSWsgjxDvGWkH99ZiW5khhgM8AyxpmdOTVtJrwJDZLtel3S11HWMCC3TY3VVdsVD0yX_PHTb0SkWVM-pZVbCcCJh_SRednjP227DyCqUDdKeJ7_uu3H_YBeR-nIaX3Mq27qYGruXVcWglkKXtKsSs8IraVWjtDB8pIFc5y9AuV5uAkkRLPPZbNOSTQwSKA6H-0hXAvFgGX_CtViJMZQPr5bi04LdJsCGVswB3Vu58HRw_SyAFl-MZWTlcsFeWDlbROwXoMI2uGkquRgbCaZVE2uMjllP1ZV5M0x2SBW7GBfjWToIZBEc_LkCUepU-rU4bvMqC01A1iltsJHDnn0iQAT-7NI6sIJdgfmyLN0WpUxhk2wEDojKXL_BARKpFc1-UA7jgCX69H4SULKyo2xdpYgPrWDaBMp1Dao0QaRJNiafFpGBzpdzhAkKnEXuQQWtmeT1bXkDY9oydoL2SmmgPXvLXYbrXt6dH9NAcweKeQgaJsyCjB2ztxM4dIB2qY21NiQnzeJRF2Iq4LVOJaCkF67Hbj9DhaeeHLKrI9CQM6PZd3xJVNT7I-KFiO2Y1LXxHpmnIBYrCBx1MlWuTGK5Kgdk7xEZ3CtxU_QkQEY8WR-tpJxjHvhxMsEsUW3Fcme=w1010-h757-no?authuser=0',
+    alt: 'łóżko',
+  },
+  {
+    id: 32,
+    image:
+      'https://lh3.googleusercontent.com/1FP6PVmBRNvqlFJO92dXZAN6pN9GIXf7g9In_K11WHbI0W1X7QCskFrkapmhVYXN4JbPfuVH8-ureALmr7f24dXlC7DeCX8d-fgTF1nmMzUNwZGRqPjea2pgpH0bjUwy_lp0Oh_feLbGbTGmvDiGKDDAnpWk4yFR5cEvX9k0RJQO6Skezx8jgaECg3KS024emM43vRVol7ivWfUWGtD4z_v-dA7lZcxNvkr_-Rj8AEI_0mPp2a2YVx9Zj1OtfJAKFRPFfUIF19cNLk4ryGZYX7UGgJewUf23l7Fs-3Jcpy9FV4hBjMO0-uStR3kEguaAhXPTX8_lmaGe9sVPlFif7fwxyyxCCX-jAO1Om770p3uRlI_kCAQiIRAYa4gsyjxsa5CZjHZmujmuMDBw7-nbYkYoxS9rrveMvsj_RTCdovfgEHxINDZL0oySHLGaIHFmYFkBAKsunxjpkG7l31M3g-nKc-YRSZYGHCecYwtzCet8V9V5T463McZ8izU1izofIUoU-bFYvhaRiTs-T6QtiCbvxYP6MMtKlZcGHbhFw_f3CEHdAHpl3oj4gl4gN4cYcXd996FTvm8-iL6Exs4mbSCBX9Yt1bv41NyQfEJUU2m7__6fLV86MbQky_rrwDdMGA2Fuh2vqAsdBnFSI_s2-kEbIGAEjLpFtKF7lu5qe4zTwfhkxvfAIjGEnUK2FpJba_-G9xBmsmGcooOt=w1010-h757-no?authuser=0',
+    alt: 'łóżko',
+  },
+  {
+    id: 33,
+    image:
+      'https://lh3.googleusercontent.com/peKmmsYTc9b0HNpdePrTPKVymUuG-chxQ8FgiaxzvKQK2E2yf0gQPou3p-7sbdXvHwoQAlLA3kc6l5QK_c_59YOSH3wECZ3qUpUjhZHp0iddpurn3q-noGExXZAiUVNYv7awwA8gNZ2pasvni03xZ5fzC28tp6sh1qtDHy-l99cyFxyWQ237sjOmgerK3CbFHt5zQFK0uaJOcnrvisrcC_Lj2exjwZgD3iXJWyVJ0i-W-GqxSeniq7QWHrS4UJeR99Qy_xiZEev--S_6CEecGPkSOAOMQXXltQEb6LG8yUd2zXjt2brq0KZvQaWke0QwAnzWOMDJM4fL_4C5NaCSIS0GMowPR2VlZUP_W6T8v7jWSxXVgZTQ3BC49BTWWyWsZtOFjOJqm_Bfqvx3yoNO0RpDkKAaciiLyLPxo-fyXSsOFUy-PK15h4_prab4TJcwqXcY9YEk-jiTuVMKlekj0YkIwGbiCOciO7LkMHD85rDyJzgDi70fLcKZXyc8tRaPQCp1gSt4u90A8I8DmvU7ROiiZRfUvzTFuGIMaHESA6n6Dp42YTCF7ARs5_BTB22CfGuCfV17biFhsFe_J_ycuWOAJ-i0bfuvL_FDb9HUvTcPUwqpmGgZfBHcz6t_4Vkh40SEUaCzMy2gvF_6nRDdqWVUMKo_yXfBZwpBrpebo3SpoM_WtxsJlLv7-XBiY5DvTbc8UuCrDxkN9odu=s757-no?authuser=0',
+    alt: 'pokój',
+  },
+  {
+    id: 34,
+    image:
+      'https://lh3.googleusercontent.com/fccs2Xox2iXKvQMylxAvWu0zqEs4ZECWV_xrd2LUzPc9f-b9ZoXDqGm4_pcWGunqHaPHrpaF_hfG3AeP2gUT46h6yCmgYfzpglmhfM4-ABLfYGlWbCebRvJOWU6k6HmGy2nTrROkMgYk6SXMbgBI0gXITwtUlpHDZU-TSCCxE8QmZzgVZz0_V-6UbUZ0TT-K98OPXjODE2uwrD4ZbiwY-oqaZdDe96DtK3npGnDXlAcf3Rym6ENi3xEIgjpqVz0CV_Kl81ZmNq_PJpIPIHxXNex-Ywrax_1_G8Gsj-8_mgQWdB5vVJvnceXk6ydeHKwzHBM-mmuC5OmpKa17Rh4EntuAAa_3SbhKd5kfffpBx4XOB2SSffRGfg7oHfrqyQKsRBs4fm34obPsFgQt5h1baKST0XrBf9RE81ELtDhuntAGqHV47zZfm-4XIXdpzuJ_4bTyNNc93XJu0HzjTxMZbj8FKE8OHRmylKusD6JXMI3uhpC0d--F8b5WbJKgSFBTxFYKb0LEWaHWrLFMLDeo62AP1GOtsyxtLoNE9mkBaCgg7QOdbLplAC70-cM_NKOL7gw4PWo7E0V3GJWrEFHqM6U7K3a0xz4yCBB9vdf4auoOW6nArKpSZHHE8N-o8LkwzNZK67a8bBsVkSPXIGv2x3HLMfXDms44LiywOQjwOj517Gj6KOUaGLVa2QTRk8HFpxSIelWmX3274VOF=w1185-h757-no?authuser=0',
+    alt: 'żagle',
+  },
 ];
