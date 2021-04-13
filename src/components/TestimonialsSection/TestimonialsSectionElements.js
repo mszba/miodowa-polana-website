@@ -9,7 +9,7 @@ export const TestimonialsContainer = styled.div`
 `;
 
 export const TestimonialsWrapper = styled.div`
-  height: 860px;
+  min-height: 860px;
   width: 100%;
   max-width: 1200px;
   margin-right: auto;

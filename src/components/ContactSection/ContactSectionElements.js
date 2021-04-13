@@ -43,8 +43,6 @@ export const MapWrap = styled(motion.div)`
 export const MapContainer = styled.iframe`
   width: 100%;
   height: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
   display: flex;
   align-items: center;
   justify-content: center;
