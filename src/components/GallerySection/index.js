@@ -86,7 +86,7 @@ const GallerySection = () => {
                   animate='visible'
                   variants={titleAnimation2}
                   transition={infoTextTransition}>
-                  Galeria miodowej polany
+                  Nasze zdjęcia
                 </Heading>
               </TextWrapper>
 

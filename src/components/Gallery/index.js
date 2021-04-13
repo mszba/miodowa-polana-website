@@ -84,7 +84,7 @@ const Gallery = () => {
               animate='visible'
               variants={titleAnimation2}
               transition={infoTextTransition}>
-              Więcej zdjęć
+              Obiekt i okolica
             </Heading>
           </TextWrapper>
           <PageContent>

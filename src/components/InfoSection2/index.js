@@ -70,7 +70,7 @@ const InfoSection2 = () => {
                     animate='visible'
                     variants={titleAnimation2}
                     transition={infoTextTransition}>
-                    Oferta miodowej polany
+                    Co oferujemy naszym klientom
                   </Heading>
 
                   <motion.div
