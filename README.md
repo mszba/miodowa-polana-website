@@ -24,7 +24,7 @@ Project created with:
 - react-scroll: 1.8.1
 - framer-motion: 2.9.5
 - react-elastic-carousel: 0.9.5
-- react-image-lightbox: 5.1.1
+- react-spring-lightbox: 1.5.0
 - react-icons: 4.1.0
 - react-cookie-consent: 6.2.1
 

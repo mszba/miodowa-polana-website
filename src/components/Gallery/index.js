@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import Lightbox from 'react-image-lightbox';
+import Lightbox from 'react-spring-lightbox';
 
 import { ButtonAnchor } from '../ButtonElements';
 import { Heading, TopLine } from '../InfoSection/InfoSectionElements';
-
 import {
   PageContainer,
   PageWrapper,
@@ -15,13 +14,11 @@ import {
   ArrowBackward,
   ArrowLeft,
 } from '../PageElements';
-
 import {
   PicturesWrapper,
   PicutreElementWrap,
   PictureElement,
 } from './GalleryElements';
-
 import {
   titleAnimation,
   titleAnimation2,
@@ -32,11 +29,10 @@ import {
 import { pictures } from './Data';
 
 import './Gallery.css';
-import 'react-image-lightbox/style.css';
 
 const Gallery = () => {
   const [hover, setHover] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   let history = useHistory();
 
@@ -46,28 +42,31 @@ const Gallery = () => {
     history.push('/');
   };
 
+  const gotoPrevious = () =>
+    currentImageIndex > 0 && setCurrentImageIndex(currentImageIndex - 1);
+
+  const gotoNext = () =>
+    currentImageIndex + 1 < pictures.length &&
+    setCurrentImageIndex(currentImageIndex + 1);
+
   return (
     <>
       <PageContainer lightBg={0}>
-        {isOpen && (
-          <Lightbox
-            mainSrc={pictures[photoIndex].image}
-            nextSrc={pictures[(photoIndex + 1) % pictures.length].image}
-            prevSrc={
-              pictures[(photoIndex + pictures.length - 1) % pictures.length]
-                .image
-            }
-            onCloseRequest={() => setIsOpen(false)}
-            onMovePrevRequest={() =>
-              setPhotoIndex(
-                (photoIndex + pictures.length - 1) % pictures.length
-              )
-            }
-            onMoveNextRequest={() =>
-              setPhotoIndex((photoIndex + 1) % pictures.length)
-            }
-          />
-        )}
+        <Lightbox
+          images={pictures}
+          isOpen={isOpen}
+          currentIndex={currentImageIndex}
+          onPrev={gotoPrevious}
+          onNext={gotoNext}
+          onClose={() => setIsOpen(false)}
+          pageTransitionConfig={{
+            from: { opacity: 0 },
+            enter: { opacity: 1 },
+            leave: { opacity: 0 },
+            config: { mass: 1, tension: 320, friction: 32 },
+          }}
+          style={{ backgroundColor: 'rgba(0,0,0,.85)' }}
+        />
         <PageWrapper style={{ maxWidth: '2000px' }}>
           <TextWrapper style={{ marginTop: '6%' }}>
             <TopLine
@@ -108,12 +107,15 @@ const Gallery = () => {
                   }}>
                   <PictureElement
                     className='gallery-picture-element'
-                    src={picture.image}
+                    src={picture.thumbnail}
+                    loading='lazy'
                     alt={picture.alt}
                     data-key={picture.id}
                     onClick={(e) => {
                       setIsOpen(true);
-                      setPhotoIndex(e.target.getAttribute('data-key') - 1);
+                      setCurrentImageIndex(
+                        e.target.getAttribute('data-key') - 1
+                      );
                     }}
                   />
                 </PicutreElementWrap>
