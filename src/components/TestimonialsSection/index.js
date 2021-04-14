@@ -19,16 +19,13 @@ import {
   QuotePictureImg,
   ElementsWrap,
 } from './TestimonialsSectionElements';
-
-import { testimonials } from './Data';
-
 import './Carousel.css';
-
 import {
   titleAnimation,
   titleAnimation2,
   infoTextTransition,
 } from '../animations/index';
+import { testimonials } from './Data';
 
 const TestimonialsSection = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -55,6 +52,8 @@ const TestimonialsSection = () => {
         setShouldAnimate(true);
       }
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 

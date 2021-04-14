@@ -16,9 +16,7 @@ import {
   MapContainer,
   AddressPhoneLink,
 } from './ContactSectionElements';
-
 import { PhoneIcon } from '../Aside/AsideElements';
-
 import {
   titleAnimation,
   titleAnimation2,
@@ -41,6 +39,8 @@ const ContactSection = () => {
         setShouldAnimate(true);
       }
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 

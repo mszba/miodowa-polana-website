@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { ButtonRouter } from '../ButtonElements';
-
 import {
   InfoContainer,
   InfoWrapper,
@@ -17,16 +16,13 @@ import {
   Hexagon,
   HexagonContainer,
 } from '../InfoSection/InfoSectionElements';
-
 import { InfoRow, OfferList, OfferElement } from './InfoSection2Elements';
-
 import {
   titleAnimation,
   titleAnimation2,
   infoTextTransition,
   hexagonAnimation,
 } from '../animations/index';
-
 import '../InfoSection/Hexagon.css';
 
 const InfoSection2 = () => {
@@ -36,11 +32,12 @@ const InfoSection2 = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const offerContainer = document.getElementById('offer');
-
       if (scrollY >= offerContainer.offsetTop - 500) {
         setShouldAnimate(true);
       }
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 
