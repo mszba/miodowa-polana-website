@@ -11,11 +11,8 @@ import {
   PictureElement,
   ButtonWrapper,
 } from './GalleryElements';
-
 import './GallerySection.css';
-
 import { ButtonRouter } from '../ButtonElements';
-
 import {
   titleAnimation,
   titleAnimation2,
@@ -30,11 +27,12 @@ const GallerySection = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const galleryContainer = document.getElementById('gallery');
-
       if (scrollY >= galleryContainer.offsetTop - 500) {
         setShouldAnimate(true);
       }
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -99,7 +97,12 @@ const GallerySection = () => {
                   className='picture-element-wrap'>
                   <PictureElement
                     className='picture-element'
-                    src='https://lh3.googleusercontent.com/9v-J1NkNE_0V9XuyKdSh8ahjzN0KL51YWsAlDVoZ2yUoPOTU8GIXsJdhDyea0ZEGo6tkOT_cPTLSa7xhn2vcEStqi3N94YyuMb7RFxmOzAUEEornEwSoKdgQYNFdfU6ftD4Keoz5e_0gkStf-eSH59F1hg5o-4WFDfroG3hE-q8P_uKUE94IddGcG5-X_sqlRytf8zq-tf7nqnNqZVHLnKCbepOk-CIsea9rZkhpg2ZesfT-YGv4e97leeDflpnVTJQ_5sdQHMmfc00sXdGexsrZ5hFWHQ_k0YhpRyMGa9UzuTIMUQ1U2yuEh-E7l9V5Sigdj8R_M9mvq9JN0ySz44pguVP-v1oW0Mw4B8nAnHzD9QmOB44GzRqzgblCGFiCgbxm37FllkxGqYVgCxrbLgmc3bcAeCDinywfXqOaCmPy9vxkuMT6KUcbu7zdKlC3IK4xqi91_KkPJ50tomznuFAF0QDL8LgYZTUvodgTwT7iN_ZVvG93W4qptn8Tr3w6xBHJ0nz1psOIMtPDidp0v_J3r1apFNIYeFYWOdcygd4djeWKDe1FnBW-XGsUBxoZGnxDtsUi5Vr0NGQOkL77myE3gf0PcVYx7sD7WAZUHCwHq0tdqdEbGAFLt-IPVRcesMOWgCcVoAgYCdYWnhLLJFJQsXJHBzY8xp6Cx8XzGhiXSYH9nGlDVJUzVb1vYqVLONQ22oRmfAkOppA0=w1346-h757-no?authuser=0'
+                    srcSet={`https://lh3.googleusercontent.com/AlphgSwITcYiq5jybnJvB2JqJkdNSR-gga36HdoUbeWj90hIWfktawFrher2qYtfK_UGPGwrFttg88WtqNL_2Bm306sDeKDZ5AWjcd8dzl-6DeK1stNtW7-Nex2zcyRVM1gmMzE=w2400 480w,
+                    https://lh3.googleusercontent.com/dB2E06dFjX3KBHKEW4i-l4gnMne4eaj__pf4taEVdzVaS4VapkOevoYAXBuFDZ_q3uqtcB-i8eIZ2nd8wi9KkpA1suzHKhaktOQcf8f4BsEFnJWxDdtQ3_teN94p-43SbE1IszI=w2400 800w,
+                    https://lh3.googleusercontent.com/WicD7WCH1ajxSWJWvUuswezTkW0TUUoIIon8-rwnQ9-EcFHLJ5YfYaxo6FpzLTKxIdq3WX4KVkCHf7LebIzUZF_iLNlS1NYXvwa96Ql6z6DQZU7FnYHypvwQod__KwqjajfVWbs=w2400 1200w
+                    `}
+                    src='https://lh3.googleusercontent.com/WicD7WCH1ajxSWJWvUuswezTkW0TUUoIIon8-rwnQ9-EcFHLJ5YfYaxo6FpzLTKxIdq3WX4KVkCHf7LebIzUZF_iLNlS1NYXvwa96Ql6z6DQZU7FnYHypvwQod__KwqjajfVWbs=w2400'
+                    loading='lazy'
                     alt='widok z balkonu'
                   />
                 </PicutreElementWrap>
@@ -111,7 +114,10 @@ const GallerySection = () => {
                   className='picture-element-wrap'>
                   <PictureElement
                     className='picture-element'
-                    src='https://lh3.googleusercontent.com/Z7sHIfG-BtABvcf9IQ0Hwi7gElWYXGU58swsa4Fw6VcDA3tLhZDG9MTYDl3sh3UO9EENtpEPhPcBi9zRh4LsufG6W0pZKpd34oS8wbBXxVASapQdrVsS7PjI3hTRR9p8rjeUvdH9PcMWWJbX88vmA1VZg-wWwQt6LO6qoIVdOZM-ZUIa-jV8l1GdVuQlAQ9n7KrzG0hYQwtWtOcsAT59AZtLUQhkTRw7YSsF0lGUldKk4FV2c6tRfVwnd5dxVMYPjnqFA4iAKcy-9KOWLDdyjiReaQ7upq3zXzXXYbJH6Ftw4rYC0XvoPXgUHLNJEk3OF0M7kqPOv0S80jEEGPxV8GaCfhiDm9kT1h-G2wMHUKgsjUfpPx92KEAgv3guN6F6kubIFFketSV4SFLLJFY3kUcphnV65QHCdbPJF-fo9aRxNq3T8k2rBBIJOfkK4XNQjqOB5GskUNmGsvgcunKuaYgXahyCScyfZFlO1aSIkUGO3DinR1fxwnGIKWRGLGPRsZYqJCjyVK31DrMQN3iQWIWR_-GHyO84T3EL6sOGGYy8rV0A5ZBQZgB431dpUDOJwM2pqi9DSVVzGoxHG5mxXEt33XWOpsaJHX6QjpDCkchl-fJ0LPLSmY_j49NXJVYgWejg6KUsVTqfN_wOqH27y528WBMbpe6FQiTwAwaLgM5J_5XkP9bni9dt_OKdw6vum_2duPq-jMD5rhFm=w1347-h757-no?authuser=0'
+                    srcSet={`https://lh3.googleusercontent.com/mUMPlXdYRY5m4pfMq9IAsHAWnuBDHYSKbgXniaUBJ1dLC9f0s7FmV7Z_2KV-Hhf6JujY6mCzUN4HCAzkKt6oInpB5F_9lODst1fl3utA6lfr1FMdEsLr7DCA_MaGdUzten7Owf_f=w2400 480w,https://lh3.googleusercontent.com/-VZIfFybfyenbI2JJfDID7EjQoY_QKnyNVYL15SwXT2Igc-eXLeh5oCwSRV7nb6jrEJQCvqFkwjNUlGqJ9S0MZ9k2H9Kq1rLmDCZP-TIn4PmPYrYtHRpovqP8J3yMHWQXYGX9jdk=w2400 800w,https://lh3.googleusercontent.com/ljEj9InmrunXPIqPVuMFtBFj8hL2FdQxKKqRkeuMz8hiUYgKFRwxerZ3JOvxCYQBvGQfE5BhlcZY-nkAPuUsnKALqHrfIhEqy32KT9gzUQUVt4azseWSoXPxlae1bo0gYCtnPgLj=w2400 1200w
+                    `}
+                    src='https://lh3.googleusercontent.com/ljEj9InmrunXPIqPVuMFtBFj8hL2FdQxKKqRkeuMz8hiUYgKFRwxerZ3JOvxCYQBvGQfE5BhlcZY-nkAPuUsnKALqHrfIhEqy32KT9gzUQUVt4azseWSoXPxlae1bo0gYCtnPgLj=w2400'
+                    loading='lazy'
                     alt='ule pszczele'
                   />
                 </PicutreElementWrap>
@@ -123,7 +129,14 @@ const GallerySection = () => {
                   className='picture-element-wrap'>
                   <PictureElement
                     className='picture-element'
-                    src='https://lh3.googleusercontent.com/-E2xboPsv5l7XTij4JoEtwLth9mbJOKmCbx-YgWOrZ-WKpTGMCwUKNwf-vh71RBTGsqtWAMf2lb30zfBVo6sC5ezwgCRU970zViFtGIgaxG6cNkKd2AqN2Xwu-FAi82YxPG7d47Z5XSzGg4cSveahVL6N1lYyoLJnXGEyNdRENG0tLy17PzaXu9kbS7FGcY-yVQKmwTi7-Xvaoxovcuryy9iTf-iaNIoWTD_3uI_KcoOxeK8FPn9RDs6y3c7yBIU1xsgtb2bKPx92EY3Ce392NxJw5OlfztwwiYv_Xwtj3cuG749IX9w4KIXL09coDG7JRtjHLU-t1-aSA05h3wKt6kgKXuafNraDiM1MQ3P49z_b8oUNmAu3GkcaEGjY4Cpey1_UgYPcWed_qRufh1RiFUmDNMU973nixjCUz4089qQXBsdJ1wl1_-YbMVwlGJ6-L009cX_LRw_5x_luaskD-LAO4LqXculvjtsEF1KInnCeubnrloLNjsY1N-MVyA7Q5X3KyQpTAxFG9tcTd4wFe6ZZMoCqO9625OFqUXK5cOpKDcJiwwqYqgvr4JLTQSbTWFonpiq3oXsgrUB73Mvfl87a_Ih1cDg7RF2qpIoon8ocpYSSYSA5LZUO5VWpxAprwzmHScnvlw5j9uxqGSh9Wa7I5dHE-kaiz_Av_UWmss5LEzhb1YSjYivlabOlFBO6ZgmwJ9gf39-FQll=w1346-h757-no?authuser=0'
+                    srcSet={`https://lh3.googleusercontent.com/3atlG3dwIGjevURa7rzJWt-P5lknuC9ltmC4wukyFTecjzQYQOO75uhdmDrWbIdxTx9_1LoBkbv1t8JcCM4Aa3pWLapviXGOpaolhjr5EB0S17-kK-d6dCae2pXRHV2jNEasJJI=w2400 480w,
+
+                    https://lh3.googleusercontent.com/wbQR69tJNjFy04QitRHJb1G_V6ucVOrJCrrYGbPqlHfIJ67a9Je5CAjFBQQhM7GP8gLTvyHBZ9btgdvGTrpprhYUPw-jnRoysL-0MCsEx0oLB6zjdFkbZlzES60XWcem4qSyIqs=w2400 800w,
+
+                    https://lh3.googleusercontent.com/W0mc8MZAVMyDi9tnh1ynAbClFy-ZwY7Eeo14lnMW8ACXvpSAOMtvYf23-vigy_oqUXt4N7fQYuQR5P9_ZvhhvEmJaXnfizijCGWsIcJ7kGnikLQIFAjWtsnCuSFcIR90hNSPlhc=w2400 1200w
+                    `}
+                    src='https://lh3.googleusercontent.com/W0mc8MZAVMyDi9tnh1ynAbClFy-ZwY7Eeo14lnMW8ACXvpSAOMtvYf23-vigy_oqUXt4N7fQYuQR5P9_ZvhhvEmJaXnfizijCGWsIcJ7kGnikLQIFAjWtsnCuSFcIR90hNSPlhc=w2400'
+                    loading='lazy'
                     alt='hotel'
                   />
                 </PicutreElementWrap>
@@ -135,7 +148,14 @@ const GallerySection = () => {
                   className='picture-element-wrap'>
                   <PictureElement
                     className='picture-element'
-                    src='https://lh3.googleusercontent.com/j5C7nZOkpr83xuo9S4borvqsqR9tAVflan1gwKUCc8elmzz8QsYTOEParwdiQ87VJrtdAGXvi3duM18FF3GrsAT4RnELm9h9JVbDZJuHR8Ag7u4ws7FVmm_eydw8CBBx9aDsPldb5dZJsoNWsdNA1sjycfVOX_IP8spS9FqtuwBK1WXNQ5qbTBRJXlgmnHqju4lW2nOxD5v7RLqNpWqnw6l7Mphg0-0w8GAbTTy2IN_jsX-F5ImNQOPPVqT0GicYGwZkbmz8CDhZUVUypOXs3uzZb4qZEistux0tnIs4TrfW16H6nw4wujl_RzGNrJuyjuhTjmvwC_DDgPA1kawgheVccWVeu8ZuJ-DXctB9Xr-6JO4AGitlKDqh7XCarOazaLVmZGrOXqgiTrqBzTbwMxh1KRwCSswJ3BEsZMTKAoqd0f9xFxsHyjgJRRX9KVQ-SYhXLpL91CGpiwMRZVe4Jj8t-q5BvfcGemVao-OEXnhWs0k5-ExDpBgqsG_mKdY81WxJ-qatqelHCERZ3v_7pZhKJa32QIBhTgfKaeJBWq6mfXgb9DsRjDNcvYl-NdyeWQTCzk3ouU0FnOaAb7b795gtgT5SekqVS0OKfNLcQxi1VxSXFzLU7i2h8otvcckThZcG_9Y5Z4fTOO-rKJxGc0t95apzlM7PTDCKFkISf_MReghiVjnsA-X4qQmyr-IJ4N5GX7bsPbya6942=w1346-h757-no?authuser=0'
+                    srcSet={`https://lh3.googleusercontent.com/w5-7UtnzrK_jgzkOcNstLtQ-MIJ-7aYdTqtLk13lp58MKYo6NDVVkdxR4KVAFPiYrJkRjLyQ9oTJEZnbTxcqFl4C9t37c-8mX9TfSkGzNEILP_y7SBPQiWyHgmntUxX3olT6QjA=w2400 480w,
+
+                    https://lh3.googleusercontent.com/JuK6aosDXOKY0uLFq1u9ar8fQLAAkga1EeQTkSipHo48RS70ztHkWvfSmQJF1ROT408Zsc45L7f3jJyqGDGmXOlfTJCFPqB_E_5kzdicUe__KvdtSLQQpiWgH-aEz0WM4NVl_pk=w2400 800w,
+
+                    https://lh3.googleusercontent.com/2wIuzO8vY5lN2mPVu_CjMh8tg68W-cqKUmxU1jagjxmj5whfe1Sm2UV321ygapAcMZH2xlMWxOmMltkVH8aszBrnRgCc8AxrUnX7L3pE6RHQVytiMjjxz5SeChXCPH9bdQuNjFUy=w2400 1200w
+                    `}
+                    src='https://lh3.googleusercontent.com/2wIuzO8vY5lN2mPVu_CjMh8tg68W-cqKUmxU1jagjxmj5whfe1Sm2UV321ygapAcMZH2xlMWxOmMltkVH8aszBrnRgCc8AxrUnX7L3pE6RHQVytiMjjxz5SeChXCPH9bdQuNjFUy=w2400'
+                    loading='lazy'
                     alt='panorama'
                   />
                 </PicutreElementWrap>
