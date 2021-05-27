@@ -40,9 +40,12 @@
 	shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
 }
 
-.gallery-picture-element-wrap:hover {
-	transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+	.gallery-picture-element-wrap:hover {
+		transform: scale(1.1);
+	}
 }
+
 
 .gallery-picture-element {
   width: var(--sizeGallery);
