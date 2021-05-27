@@ -108,7 +108,6 @@ const Gallery = () => {
                   <PictureElement
                     className='gallery-picture-element'
                     src={picture.thumbnail}
-                    loading='lazy'
                     alt={picture.alt}
                     data-key={picture.id}
                     onClick={(e) => {

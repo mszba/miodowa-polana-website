@@ -31,6 +31,7 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
+    changeNav();
 
     return () => {
       window.removeEventListener('scroll', changeNav);
