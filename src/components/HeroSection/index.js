@@ -55,7 +55,7 @@ const HeroSection = () => {
           variants={textAnimation}
           transition={textTransition}>
           <HeroP>
-            Miodowa Polana to miejsce , w którym doświadczych bliskiego kontaktu
+            Miodowa Polana to miejsce, w którym doświadczych bliskiego kontaktu
             z naturą. Obiekt znajduje się w strefie uzdrowiskowej oraz spokojnej
             i cichej okolicy.
           </HeroP>
