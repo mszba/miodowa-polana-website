@@ -102,7 +102,6 @@ const GallerySection = () => {
                     https://lh3.googleusercontent.com/WicD7WCH1ajxSWJWvUuswezTkW0TUUoIIon8-rwnQ9-EcFHLJ5YfYaxo6FpzLTKxIdq3WX4KVkCHf7LebIzUZF_iLNlS1NYXvwa96Ql6z6DQZU7FnYHypvwQod__KwqjajfVWbs=w2400 1200w
                     `}
                     src='https://lh3.googleusercontent.com/WicD7WCH1ajxSWJWvUuswezTkW0TUUoIIon8-rwnQ9-EcFHLJ5YfYaxo6FpzLTKxIdq3WX4KVkCHf7LebIzUZF_iLNlS1NYXvwa96Ql6z6DQZU7FnYHypvwQod__KwqjajfVWbs=w2400'
-                    loading='lazy'
                     alt='widok z balkonu'
                   />
                 </PicutreElementWrap>
@@ -117,7 +116,6 @@ const GallerySection = () => {
                     srcSet={`https://lh3.googleusercontent.com/mUMPlXdYRY5m4pfMq9IAsHAWnuBDHYSKbgXniaUBJ1dLC9f0s7FmV7Z_2KV-Hhf6JujY6mCzUN4HCAzkKt6oInpB5F_9lODst1fl3utA6lfr1FMdEsLr7DCA_MaGdUzten7Owf_f=w2400 480w,https://lh3.googleusercontent.com/-VZIfFybfyenbI2JJfDID7EjQoY_QKnyNVYL15SwXT2Igc-eXLeh5oCwSRV7nb6jrEJQCvqFkwjNUlGqJ9S0MZ9k2H9Kq1rLmDCZP-TIn4PmPYrYtHRpovqP8J3yMHWQXYGX9jdk=w2400 800w,https://lh3.googleusercontent.com/ljEj9InmrunXPIqPVuMFtBFj8hL2FdQxKKqRkeuMz8hiUYgKFRwxerZ3JOvxCYQBvGQfE5BhlcZY-nkAPuUsnKALqHrfIhEqy32KT9gzUQUVt4azseWSoXPxlae1bo0gYCtnPgLj=w2400 1200w
                     `}
                     src='https://lh3.googleusercontent.com/ljEj9InmrunXPIqPVuMFtBFj8hL2FdQxKKqRkeuMz8hiUYgKFRwxerZ3JOvxCYQBvGQfE5BhlcZY-nkAPuUsnKALqHrfIhEqy32KT9gzUQUVt4azseWSoXPxlae1bo0gYCtnPgLj=w2400'
-                    loading='lazy'
                     alt='ule pszczele'
                   />
                 </PicutreElementWrap>
@@ -136,7 +134,6 @@ const GallerySection = () => {
                     https://lh3.googleusercontent.com/W0mc8MZAVMyDi9tnh1ynAbClFy-ZwY7Eeo14lnMW8ACXvpSAOMtvYf23-vigy_oqUXt4N7fQYuQR5P9_ZvhhvEmJaXnfizijCGWsIcJ7kGnikLQIFAjWtsnCuSFcIR90hNSPlhc=w2400 1200w
                     `}
                     src='https://lh3.googleusercontent.com/W0mc8MZAVMyDi9tnh1ynAbClFy-ZwY7Eeo14lnMW8ACXvpSAOMtvYf23-vigy_oqUXt4N7fQYuQR5P9_ZvhhvEmJaXnfizijCGWsIcJ7kGnikLQIFAjWtsnCuSFcIR90hNSPlhc=w2400'
-                    loading='lazy'
                     alt='hotel'
                   />
                 </PicutreElementWrap>
@@ -155,7 +152,6 @@ const GallerySection = () => {
                     https://lh3.googleusercontent.com/2wIuzO8vY5lN2mPVu_CjMh8tg68W-cqKUmxU1jagjxmj5whfe1Sm2UV321ygapAcMZH2xlMWxOmMltkVH8aszBrnRgCc8AxrUnX7L3pE6RHQVytiMjjxz5SeChXCPH9bdQuNjFUy=w2400 1200w
                     `}
                     src='https://lh3.googleusercontent.com/2wIuzO8vY5lN2mPVu_CjMh8tg68W-cqKUmxU1jagjxmj5whfe1Sm2UV321ygapAcMZH2xlMWxOmMltkVH8aszBrnRgCc8AxrUnX7L3pE6RHQVytiMjjxz5SeChXCPH9bdQuNjFUy=w2400'
-                    loading='lazy'
                     alt='panorama'
                   />
                 </PicutreElementWrap>
